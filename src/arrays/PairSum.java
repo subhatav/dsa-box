@@ -5,6 +5,10 @@ import java.util.Map;
 
 // LeetCode Link : https://leetcode.com/problems/two-sum/
 
+// Approach #1 : Brute Force; Time Complexity : O(N^2)
+// Approach #2 : Sort + Binary Search; Time Complexity : O(NlogN + NlogN) = O(NlogN)
+// Approach #3 : Set; Time Complexity : O(N)
+
 public class PairSum {
 
     public int[] compute(int[] nums, int target) {

@@ -4,6 +4,11 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+// LeetCode Link : https://leetcode.com/problems/3sum/
+
+// Approach #1 : Brute Force; Time Complexity : O(N^3)
+// Approach #2 : Sort + N * Pair Sum; Time Complexity : O(NlogN + N^2) = O(N^2)
+
 public class Triplets {
 
     public List<List<Integer>> compute(int[] nums) {
