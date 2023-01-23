@@ -3,7 +3,7 @@ package arrays;
 // LeetCode Link: https://leetcode.com/problems/rotate-image/
 
 // Approach #1: Brute Force; Time Complexity: O(N^2), Space Complexity: O(N^2)
-// Approach #2: Transpose + Reflect; Time Complexity: O(N^2), Space Complexity: O(1)
+// Approach #2: Transpose & Reflect; Time Complexity: O(N^2), Space Complexity: O(1)
 // Approach #3: Rotate 4-Cell Groups; Time Complexity: O(N^2), Space Complexity: O(1)
 
 public class RotateMatrix {

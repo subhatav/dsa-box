@@ -2,20 +2,20 @@ package arrays;
 
 // LeetCode Link: https://leetcode.com/problems/longest-mountain-in-array/
 
-// Approach: Traverse + Check Validity + Record Distance; Time Complexity: O(N)
+// Approach: Traverse & Check Validity & Record Distance; Time Complexity: O(N)
 
 public class LongestMountain {
     
     public int compute(int[] nums) {
         
-        int index = 0, result = 0, length = nums.length;
+        int index = 0, result = 0, distance = nums.length;
 
-        while (length >= 3 && index < length) {
+        while (distance >= 3 && index < distance) {
 
             int base = index;
 
             // Climb up the Mountain side
-            while (index + 1 < length && nums[index] < nums[index + 1]) {
+            while (index + 1 < distance && nums[index] < nums[index + 1]) {
 
                 index += 1;
             }
@@ -30,7 +30,7 @@ public class LongestMountain {
             int peak = index;
 
             // Roll down the Mountain side
-            while (index + 1 < length && nums[index] > nums[index + 1]) {
+            while (index + 1 < distance && nums[index] > nums[index + 1]) {
 
                 index += 1;
             }

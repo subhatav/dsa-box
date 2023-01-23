@@ -5,7 +5,7 @@ import java.util.ArrayList;
 // LeetCode Link: https://leetcode.com/problems/reverse-pairs/
 
 // Approach #1: Brute Force; Time Complexity: O(N^2)
-// Approach #2: Divide + Count + Merge; Time Complexity: O(NlogN + N + N) = O(NlogN)
+// Approach #2: Divide & Count & Merge; Time Complexity: O(NlogN + N + N) = O(NlogN)
 
 // To-Do: Shift this Class to the "sorting" package
 
