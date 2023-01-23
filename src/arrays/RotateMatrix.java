@@ -10,12 +10,11 @@ public class RotateMatrix {
 
     public void compute(int[][] matrix) {
 
-        int length = matrix.length;
+        int size = matrix.length;
 
-        for (int layer = 0; layer < length / 2; layer++) {
+        for (int layer = 0; layer < size / 2; layer++) {
 
-            int first = layer;
-            int last = length - layer - 1;
+            int first = layer, last = size - layer - 1;
 
             for (int index = first; index < last; index++) {
 
