@@ -19,14 +19,18 @@ public class HalfMajority {
             // Since the Majority Element WILL occur more than (N / 2) times,
             // there is guaranteed chance that the Majority Element will occur
             // in AT LEAST two Consecutive Indices in the Array provided; so
-            // the value of the Frequency Variable will become more than 1.
+            // the value of the Frequency Variable will become more than one
 
             if (count == 0) major = num;
             
             if (num == major) count += 1;
             else count -= 1;
         }
+        
+        count = 0; // Reset the Frequency Variable to zero
 
-        return major;
+        for (int num : nums) if (num == major) count += 1;
+        
+        return (count > (nums.length / 2)) ? major : -1;
     }
 }
