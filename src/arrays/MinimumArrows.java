@@ -7,7 +7,7 @@ import java.util.Comparator;
 
 // Approach: Sort, Check if Overlapping & Count when NOT so; Time Complexity: O(NlogN + N) = O(NlogN)
 
-public class ActivitySelection {
+public class MinimumArrows {
 
     public int compute(int[][] points) {
 

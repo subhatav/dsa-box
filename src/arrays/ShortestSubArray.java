@@ -11,31 +11,31 @@ public class ShortestSubArray {
     
     public int compute(int[] nums) {
 
-        int len = nums.length - 1;
+        int last = nums.length - 1;
 
         // Default values should be such that
         // length of the sub-array should be 0
         int left = -1, right = -2;
 
-        int max = nums[0], min = nums[len];
+        int high = nums[0], low = nums[last];
 
-        for (int ind = 1; ind <= len; ind++) {
+        for (int index = 1; index <= last; index++) {
 
             // The maximum value of the sub-array needs to be smaller
-            // than the minimum of the rightmost sorted sub-array = 
+            // than the minimum of the rightmost sorted sub-array =
             // the maximum value of the sub-array is counted from left
-            max = Math.max(max, nums[ind]);
+            high = Math.max(high, nums[index]);
             // The minimum value of the sub-array needs to be larger
-            // than the maximum of the leftmost sorted sub-array = 
+            // than the maximum of the leftmost sorted sub-array =
             // the minimum value of the sub-array is counted from right
-            min = Math.min(min, nums[len - ind]);
+            low = Math.min(low, nums[last - index]);
 
-            // When "nums[ind]" is smaller than the current maximum
+            // When "nums[index]" is smaller than the current "high"
             // = the unsorted sub-array AT LEAST needs to end here
-            if (nums[ind] < max) right = ind;
-            // When "nums[len - ind]" is larger than the current minimum
+            if (nums[index] < high) right = index;
+            // When "nums[last - index]" is larger than the current "low"
             // = the unsorted sub-array AT LEAST needs to begin here
-            if (nums[len - ind] > min) left = len - ind;
+            if (nums[last - index] > low) left = last - index;
         }
         
         return right - left + 1;
