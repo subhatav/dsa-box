@@ -13,32 +13,35 @@ public class Triplets {
 
     public List<List<Integer>> compute(int[] nums) {
 
-        Arrays.sort(nums);
-
-        int capacity = nums.length;
-
         List<List<Integer>> triplets = new ArrayList<>();
 
-        for (int index = 0; index < capacity - 2; index++) {
+        int size = nums.length;
+
+        Arrays.sort(nums);
+
+        for (int index = 0; index < size - 2; index++) {
+
+            int left = index + 1, right = size - 1;
 
             int num = nums[index];
 
-            if (index > 0 && num == nums[index - 1]) continue;
-
-            int left = index + 1, right = capacity - 1;
+            if (index > 0 && num == nums[index - 1])
+                continue;
 
             while (left < right) {
 
                 int sum = num + nums[left] + nums[right];
 
-                if (sum > 0) right--;
-                else if (sum < 0) left++;
+                if (sum < 0)
+                    left += 1;
+                else if (sum > 0)
+                    right -= 1;
 
-                else if (sum == 0) {
+                else {
 
                     triplets.add(Arrays.asList(num, nums[left++], nums[right--]));
 
-                    while (nums[left] == nums[left - 1] && left < right) left++;
+                    while (left < right && nums[left - 1] == nums[left]) left += 1;
                 }
             }
         }
