@@ -3,14 +3,14 @@ package arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-// LeetCode Link: https://leetcode.com/problems/subarray-sum-equals-k/
+// LeetCode Link: https://leetcode.com/problems/longest-substring-without-repeating-characters/
 // Solution Link: https://takeuforward.org/data-structure/length-of-longest-substring-without-any-repeating-character/
 
 // Approach #1: Brute Force; Time Complexity: O(N^2)
 // Approach #2: Sliding Window with Set; Time Complexity: O(2 * N)
 // Approach #3: Sliding Window with Map; Time Complexity: O(N)
 
-public class DistinctSubArray {
+public class LongestWindow {
 
     public int compute(String str) {
 
