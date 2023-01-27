@@ -10,7 +10,7 @@ import java.util.Map;
 
 public class MinimumSwaps {
 
-    public int minSwaps(int[] nums) {
+    public int compute(int[] nums) {
 
         int swaps = 0;
         int size = nums.length;
@@ -32,12 +32,12 @@ public class MinimumSwaps {
             // Traverse the cycle until the starting index is reached
             while (sorted.get(nums[index]) != index) {
 
-                swaps++;
+                swaps += 1;
 
                 // Swap the two elements
-                int temp = nums[index];
-                nums[index] = nums[sorted.get(temp)];
-                nums[sorted.get(temp)] = temp;
+                int backup = nums[index];
+                nums[index] = nums[sorted.get(backup)];
+                nums[sorted.get(backup)] = backup;
             }
         }
 
