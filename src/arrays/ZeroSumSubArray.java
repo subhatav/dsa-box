@@ -13,6 +13,7 @@ public class ZeroSumSubArray {
     
     public int compute(int nums[], int length) {
         
+        // Key == Prefix Sum; Value == Current Index
         Map<Integer, Integer> prefixes = new HashMap<>();
 
         int sum = 0, result = 0;
@@ -26,7 +27,7 @@ public class ZeroSumSubArray {
             
             if (sum == 0) result = index + 1;
 
-            if (prefixes.get(sum) == null) prefixes.put(sum, index);
+            if (!prefixes.containsKey(sum)) prefixes.put(sum, index);
             else result = Math.max(result, index - prefixes.get(sum));
         }
 

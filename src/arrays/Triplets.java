@@ -25,17 +25,14 @@ public class Triplets {
 
             int num = nums[index];
 
-            if (index > 0 && num == nums[index - 1])
-                continue;
+            if (index > 0 && num == nums[index - 1]) continue;
 
             while (left < right) {
 
                 int sum = num + nums[left] + nums[right];
 
-                if (sum < 0)
-                    left += 1;
-                else if (sum > 0)
-                    right -= 1;
+                if (sum < 0) left += 1;
+                else if (sum > 0) right -= 1;
 
                 else {
 
