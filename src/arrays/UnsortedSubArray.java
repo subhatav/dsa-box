@@ -7,7 +7,7 @@ package arrays;
 // Approach #3: Find the Smallest & Largest numbers of the Unsorted sub-array &
 //              find their proper Indices in the Sorted whole-array; Time Complexity: O(N)
 
-public class ShortestSubArray {
+public class UnsortedSubArray {
     
     public int compute(int[] nums) {
 

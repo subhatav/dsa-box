@@ -13,8 +13,7 @@ public class ProductsArray {
         int[] left = new int[size];
         int[] right = new int[size];
 
-        left[0] = 1;
-        right[size - 1] = 1;
+        left[0] = right[size - 1] = 1;
 
         for (int index = 1; index < size; index++) {
 
