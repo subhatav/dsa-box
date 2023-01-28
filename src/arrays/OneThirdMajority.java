@@ -26,7 +26,7 @@ public class OneThirdMajority {
 
             if (num == major1) count1 += 1;
             else if (num == major2) count2 += 1;
-            
+
             else if (count1 == 0) {
 
                 major1 = num;
@@ -41,7 +41,7 @@ public class OneThirdMajority {
 
             else { count1 -= 1; count2 -= 1; }
         }
-        
+
         count1 = count2 = 0;
 
         for (int num : nums) {

@@ -16,8 +16,8 @@ public class LongestWindow {
 
         Map<Character, Integer> window = new HashMap<>();
 
-        int ans = 0, left = 0, right = 0;
-        int size = str.length();
+        int ans = 0, size = str.length();
+        int left = 0, right = 0;
 
         if (size <= 1) return size;
 
@@ -27,7 +27,7 @@ public class LongestWindow {
             int temp = window.getOrDefault(ch, -1);
 
             if (temp >= left) left = temp + 1;
-            
+
             window.put(ch, right++);
 
             ans = Math.max(ans, right - left);
