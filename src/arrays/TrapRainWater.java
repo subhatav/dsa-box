@@ -11,13 +11,12 @@ public class TrapRainWater {
     public int compute(int[] heights) {
 
         int water = 0, distance = heights.length;
-
-        if (distance <= 2) return water;
-
         int leftBar = 0, rightBar = distance - 1;
 
         int leftMax = heights[leftBar];
         int rightMax = heights[rightBar];
+
+        if (distance <= 2) return water;
 
         while (leftBar < rightBar) {
 
