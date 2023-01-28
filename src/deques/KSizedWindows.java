@@ -1,4 +1,4 @@
-package arrays;
+package deques;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
@@ -20,7 +20,7 @@ public class KSizedWindows {
 
         for (int i = 0; i < size; i++) {
 
-            // Remove left-most numbers which are OUT of range
+            // Remove left-most number which goes OUT of range
             if (!deque.isEmpty() && deque.peekFirst() == i - k)
                 deque.pollFirst();
 

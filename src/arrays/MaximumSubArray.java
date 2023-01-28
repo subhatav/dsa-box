@@ -16,7 +16,7 @@ public class MaximumSubArray {
             sum += num;
 
             if (sum > max) max = sum;
-            // Reset current "sum" to zero when it goes negative
+            // Reset current "sum" to ZERO, when it goes negative
             if (sum < 0) sum = 0;
         }
 
