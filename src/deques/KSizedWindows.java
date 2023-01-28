@@ -13,10 +13,10 @@ public class KSizedWindows {
 
     public int[] compute(int[] nums, int k) {
 
-        int size = nums.length, j = 0;
-        int[] maxes = new int[size - k + 1];
-
         Deque<Integer> deque = new ArrayDeque<>();
+
+        int j = 0, size = nums.length;
+        int[] maxes = new int[size - k + 1];
 
         for (int i = 0; i < size; i++) {
 
