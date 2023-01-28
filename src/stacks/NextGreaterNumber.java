@@ -7,7 +7,7 @@ import java.util.Stack;
 // LeetCode Link: https://leetcode.com/problems/next-greater-element-i/
 // Solution Link: https://leetcode.com/problems/next-greater-element-i/solutions/97595/java-10-lines-linear-time-complexity-o-n-with-explanation/
 
-// Approach: ; Time Complexity: O(N1 + N2); Space Complexity: O(2 * N1)
+// Approach: Monotonic Stack LIFO Technique; Time Complexity: O(N1 + N2); Space Complexity: O(2 * N1)
 
 public class NextGreaterNumber {
 
