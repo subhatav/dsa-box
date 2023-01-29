@@ -12,7 +12,6 @@ public class NextCircularNumber {
 
     public int[] compute(int[] nums) {
 
-        // Monotonic increasing sub-sequence
         Stack<Integer> stack = new Stack<>();
 
         int size = nums.length;
