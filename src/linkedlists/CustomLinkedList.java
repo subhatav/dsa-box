@@ -6,15 +6,15 @@ public class CustomLinkedList {
 
     private int size;
 
-    private Node head;
-    private Node tail;
+    private LinkedNode head;
+    private LinkedNode tail;
 
-    private class Node {
+    protected class LinkedNode {
 
         int value = 0;
-        Node next = null;
+        LinkedNode next = null;
 
-        public Node(int value) {
+        public LinkedNode(int value) {
 
             this.value = value;
         }
@@ -28,9 +28,9 @@ public class CustomLinkedList {
         this.tail = null;
     }
 
-    protected Node getNodeAt(int index) {
+    protected LinkedNode getNodeAt(int index) {
 
-        Node current = this.head;
+        LinkedNode current = this.head;
 
         while (index-- > 0) current = current.next;
 
@@ -46,7 +46,7 @@ public class CustomLinkedList {
 
     protected void addAtHead(int value) {
 
-        Node current = new Node(value);
+        LinkedNode current = new LinkedNode(value);
 
         if (this.size == 0) {
 
@@ -64,7 +64,7 @@ public class CustomLinkedList {
 
     protected void addAtTail(int value) {
 
-        Node current = new Node(value);
+        LinkedNode current = new LinkedNode(value);
 
         if (this.size == 0) {
 
@@ -90,9 +90,9 @@ public class CustomLinkedList {
         
         else {
 
-            Node last = getNodeAt(index - 1);
-            Node current = new Node(value);
-            Node next = last.next;
+            LinkedNode last = getNodeAt(index - 1);
+            LinkedNode current = new LinkedNode(value);
+            LinkedNode next = last.next;
 
             last.next = current;
             current.next = next;
@@ -112,8 +112,8 @@ public class CustomLinkedList {
 
         } else {
 
-            Node last = this.head;
-            Node next = last.next;
+            LinkedNode last = this.head;
+            LinkedNode next = last.next;
 
             last.next = null;
             this.head = next;
@@ -133,7 +133,7 @@ public class CustomLinkedList {
 
         } else {
 
-            Node previous = getNodeAt(this.size - 2);
+            LinkedNode previous = getNodeAt(this.size - 2);
 
             previous.next = null;
             this.tail = previous;
@@ -151,9 +151,9 @@ public class CustomLinkedList {
         
         else {
 
-            Node last = getNodeAt(index - 1);
-            Node current = last.next;
-            Node next = last.next.next;
+            LinkedNode last = getNodeAt(index - 1);
+            LinkedNode current = last.next;
+            LinkedNode next = last.next.next;
 
             current.next = null;
             last.next = next;
