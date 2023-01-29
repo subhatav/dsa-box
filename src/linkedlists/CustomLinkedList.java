@@ -4,21 +4,18 @@ package linkedlists;
 
 public class CustomLinkedList {
 
-    private int size;
-
-    private LinkedNode head;
-    private LinkedNode tail;
-
-    protected class LinkedNode {
+    static class LinkedNode {
 
         int value = 0;
         LinkedNode next = null;
 
-        public LinkedNode(int value) {
-
-            this.value = value;
-        }
+        LinkedNode(int value) { this.value = value; }
     }
+
+    private LinkedNode head;
+    private LinkedNode tail;
+
+    private int size;
 
     public CustomLinkedList() {
 

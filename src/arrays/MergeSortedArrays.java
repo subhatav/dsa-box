@@ -2,7 +2,7 @@ package arrays;
 
 // LeetCode Link: https://leetcode.com/problems/merge-sorted-array/
 
-// Approach: Check, Store & Traverse; Time Complexity: O(M + N), Space Complexity: O(1)
+// Approach: Check, Store & Traverse; Time Complexity: O(N1 + N2), Space Complexity: O(1)
 
 public class MergeSortedArrays {
 

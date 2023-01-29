@@ -11,6 +11,18 @@ public class ReverseLinkedList {
 
     public LinkedNode compute(LinkedNode head) {
 
+        /*
+            if (head == null) return head;
+            if (head.next == null) return head;
+
+            LinkedNode reverse = compute(head.next);
+
+            head.next.next = head;
+            head.next = null;
+
+            return reverse;
+        */
+
         // Node "reverse" == Reversed LL
         LinkedNode backup, reverse = null;
 
