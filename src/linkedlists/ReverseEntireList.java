@@ -7,21 +7,23 @@ import linkedlists.CustomLinkedList.LinkedNode;
 // Approach #1: Recursive Technique; Time Complexity: O(N)
 // Approach #2: Iterative Technique; Time Complexity: O(N)
 
-public class ReverseLinkedList {
+public class ReverseEntireList {
 
-    public LinkedNode compute(LinkedNode head) {
+    public LinkedNode compute1(LinkedNode head) {
 
-        /*
-            if (head == null) return head;
-            if (head.next == null) return head;
+        if (head == null) return head;
+        if (head.next == null) return head;
 
-            LinkedNode reverse = compute(head.next);
+        // Node "reverse" == Head of reversed LL
+        LinkedNode reverse = compute1(head.next);
 
-            head.next.next = head;
-            head.next = null;
+        head.next.next = head;
+        head.next = null;
 
-            return reverse;
-        */
+        return reverse;
+    }
+
+    public LinkedNode compute2(LinkedNode head) {
 
         // Node "reverse" == Reversed LL
         LinkedNode backup, reverse = null;

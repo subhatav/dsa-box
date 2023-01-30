@@ -27,11 +27,11 @@ public class CustomLinkedList {
 
     protected LinkedNode getNodeAt(int index) {
 
-        LinkedNode current = this.head;
+        LinkedNode node = this.head;
 
-        while (index-- > 0) current = current.next;
+        while (index-- > 0) node = node.next;
 
-        return current;
+        return node;
     }
 
     public int getValueAt(int index) {
@@ -43,17 +43,17 @@ public class CustomLinkedList {
 
     protected void addAtHead(int value) {
 
-        LinkedNode current = new LinkedNode(value);
+        LinkedNode node = new LinkedNode(value);
 
         if (this.size == 0) {
 
-            this.head = current;
-            this.tail = current;
+            this.head = node;
+            this.tail = node;
 
         } else {
 
-            current.next = this.head;
-            this.head = current;
+            node.next = this.head;
+            this.head = node;
         }
 
         this.size += 1;
@@ -61,18 +61,18 @@ public class CustomLinkedList {
 
     protected void addAtTail(int value) {
 
-        LinkedNode current = new LinkedNode(value);
+        LinkedNode node = new LinkedNode(value);
 
         if (this.size == 0) {
 
-            this.head = current;
-            this.tail = current;
+            this.head = node;
+            this.tail = node;
 
         } else {
 
-            this.tail.next = current;
-            current.next = null;
-            this.tail = current;
+            this.tail.next = node;
+            node.next = null;
+            this.tail = node;
         }
 
         this.size += 1;
@@ -87,12 +87,12 @@ public class CustomLinkedList {
         
         else {
 
-            LinkedNode last = getNodeAt(index - 1);
-            LinkedNode current = new LinkedNode(value);
-            LinkedNode next = last.next;
+            LinkedNode back = getNodeAt(index - 1);
+            LinkedNode node = new LinkedNode(value);
+            LinkedNode then = back.next;
 
-            last.next = current;
-            current.next = next;
+            back.next = node;
+            node.next = then;
 
             this.size += 1;
         }
@@ -109,11 +109,11 @@ public class CustomLinkedList {
 
         } else {
 
-            LinkedNode last = this.head;
-            LinkedNode next = last.next;
+            LinkedNode back = this.head;
+            LinkedNode then = back.next;
 
-            last.next = null;
-            this.head = next;
+            back.next = null;
+            this.head = then;
         }
 
         this.size -= 1;
@@ -130,10 +130,10 @@ public class CustomLinkedList {
 
         } else {
 
-            LinkedNode previous = getNodeAt(this.size - 2);
+            LinkedNode back = getNodeAt(this.size - 2);
 
-            previous.next = null;
-            this.tail = previous;
+            back.next = null;
+            this.tail = back;
         }
 
         this.size -= 1;
@@ -148,12 +148,12 @@ public class CustomLinkedList {
         
         else {
 
-            LinkedNode last = getNodeAt(index - 1);
-            LinkedNode current = last.next;
-            LinkedNode next = last.next.next;
+            LinkedNode back = getNodeAt(index - 1);
+            LinkedNode node = back.next;
+            LinkedNode then = back.next.next;
 
-            current.next = null;
-            last.next = next;
+            node.next = null;
+            back.next = then;
 
             this.size -= 1;
         }
