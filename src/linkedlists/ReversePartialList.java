@@ -13,13 +13,13 @@ public class ReversePartialList {
 
         if (left == right || head.next == null) return head;
 
-        // Node "dummy" POINTS to the Starting of the List
-        LinkedNode back, result = new LinkedNode(0);
+        // Node "dummy" HOLDs the First Node of the List
+        LinkedNode back, dummy = new LinkedNode(0);
 
-        result.next = head;
-        back = result;
+        dummy.next = head;
+        back = dummy;
 
-        // Node "back" HOLDS the Last Node before the Reverse List
+        // Node "back" HOLDs the Last Node before the Reverse List
         for (int index = 1; index < left; index++) back = back.next;
 
         // Node "node" == First Node of Reverse List
@@ -42,6 +42,6 @@ public class ReversePartialList {
             then = node.next;
         }
 
-        return result.next;
+        return dummy.next;
     }
 }
