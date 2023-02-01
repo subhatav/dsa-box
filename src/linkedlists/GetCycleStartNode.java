@@ -5,7 +5,7 @@ import linkedlists.CustomLinkedList.LinkedNode;
 // LeetCode Link: https://leetcode.com/problems/linked-list-cycle-ii/
 // Solution Link: https://takeuforward.org/data-structure/starting-point-of-loop-in-a-linked-list/
 
-// Approach #1: Record in Hash Set; Time Complexity: O(N), Space Complexity: O(N)
+// Approach #1: Hashing Technique; Time Complexity: O(N), Space Complexity: O(N)
 // Approach #2: Tortoise-Hare Technique; Time Complexity: O(N), Space Complexity: O(1)
 
 public class GetCycleStartNode {

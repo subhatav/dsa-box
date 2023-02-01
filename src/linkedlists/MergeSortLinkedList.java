@@ -8,7 +8,7 @@ import linkedlists.CustomLinkedList.LinkedNode;
 // Approach #1: Top-Down Merge Sort == Recursive Technique; Time Complexity: O(NlogN), Space Complexity: O(logN)
 // Approach #2: Bottom-Up Merge Sort == Iterative Technique; Time Complexity: O(NlogN), Space Complexity: O(1)
 
-public class MergeSortList {
+public class MergeSortLinkedList {
 
     public LinkedNode compute(LinkedNode head) {
 
