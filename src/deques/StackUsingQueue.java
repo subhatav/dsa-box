@@ -18,7 +18,7 @@ public class StackUsingQueue {
 
         queue.offer(number);
 
-        // Do NOT move "number" = Loops from 1 (to Size - 1)
+        // Keep "number" fixed == Loops from 1 to (Size - 1)
         for (int index = 1; index < queue.size(); index++) {
 
             queue.add(queue.remove());
