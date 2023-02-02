@@ -2,7 +2,7 @@ package arrays;
 
 import java.util.Arrays;
 
-// LeetCode Link: https://leetcode.com/problems/search-a-2d-matrix/
+// Problem Link: https://leetcode.com/problems/search-a-2d-matrix/
 
 // Approach #1: Brute Force; Time Complexity: O(M * N)
 // Approach #2: Binary Search for entire Matrix; Time Complexity: O(log(M * N))

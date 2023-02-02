@@ -1,6 +1,6 @@
 package arrays;
 
-// LeetCode Link: https://leetcode.com/problems/unique-paths/
+// Problem Link: https://leetcode.com/problems/unique-paths/
 
 // Approach #1: Recursive Calls; Time Complexity: Exponential, Space Complexity: Exponential
 // Approach #2: Dynamic Programming; Time Complexity: O(M * N), Space Complexity: O(M * N)

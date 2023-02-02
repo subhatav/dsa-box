@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-// GeeksForGeeks Link: https://practice.geeksforgeeks.org/problems/minimum-swaps/1
+// Problem Link: https://practice.geeksforgeeks.org/problems/minimum-swaps/1
 
 // Approach: Sort & Compare Both Arrays; Time Complexity: O(N + NlogN + N) = O(NlogN)
 

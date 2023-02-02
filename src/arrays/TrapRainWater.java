@@ -1,6 +1,6 @@
 package arrays;
 
-// LeetCode Link: https://leetcode.com/problems/trapping-rain-water/
+// Problem Link: https://leetcode.com/problems/trapping-rain-water/
 
 // Approach #1: Brute Force; Time Complexity: O(N^2)
 // Approach #2: Maxes by DP & (Min-of-Maxes minus Current); Time Complexity: O(N)

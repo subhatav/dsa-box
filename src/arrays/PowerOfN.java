@@ -1,6 +1,6 @@
 package arrays;
 
-// LeetCode Link: https://leetcode.com/problems/powx-n/
+// Problem Link: https://leetcode.com/problems/powx-n/
 // Solution Link: https://takeuforward.org/data-structure/implement-powxn-x-raised-to-the-power-n/
 
 // Approach #1: Brute Force; Time Complexity: O(N)

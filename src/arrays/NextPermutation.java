@@ -1,6 +1,6 @@
 package arrays;
 
-// LeetCode Link: https://leetcode.com/problems/next-permutation/
+// Problem Link: https://leetcode.com/problems/next-permutation/
 // Solution Link: https://takeuforward.org/data-structure/next_permutation-find-next-lexicographically-greater-permutation/
 
 // Approach #1: Brute Force; Time Complexity: O(N! * N)

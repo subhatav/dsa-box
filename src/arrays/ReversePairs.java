@@ -2,7 +2,7 @@ package arrays;
 
 import java.util.ArrayList;
 
-// LeetCode Link: https://leetcode.com/problems/reverse-pairs/
+// Problem Link: https://leetcode.com/problems/reverse-pairs/
 
 // Approach #1: Brute Force; Time Complexity: O(N^2)
 // Approach #2: Divide, Count & Sort; Time Complexity: O(NlogN + N + N) = O(NlogN)

@@ -3,7 +3,7 @@ package arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-// LeetCode Link: https://leetcode.com/problems/subarray-sum-equals-k/
+// Problem Link: https://leetcode.com/problems/subarray-sum-equals-k/
 // Solution Link: https://leetcode.com/problems/subarray-sum-equals-k/solutions/102106/java-solution-presum-hashmap/
 
 // Approach #1: Brute Force; Time Complexity: O(N^2), Space Complexity: O(1)

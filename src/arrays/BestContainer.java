@@ -1,6 +1,6 @@
 package arrays;
 
-// LeetCode Link: https://leetcode.com/problems/container-with-most-water/
+// Problem Link: https://leetcode.com/problems/container-with-most-water/
 // Solution Link: https://www.youtube.com/watch?v=UuiTKBwPgAo
 
 // Approach #1: Brute Force; Time Complexity: O(N^2)

@@ -1,6 +1,6 @@
 package arrays;
 
-// LeetCode Link: https://leetcode.com/problems/maximum-subarray/
+// Problem Link: https://leetcode.com/problems/maximum-subarray/
 
 // Approach #1: Brute Force; Time Complexity: O(N^3) or O(N^2)
 // Approach #2: Kadane's Algorithm; Time Complexity: O(N)

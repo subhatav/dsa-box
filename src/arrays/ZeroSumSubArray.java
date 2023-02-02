@@ -3,7 +3,7 @@ package arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-// GeeksForGeeks Link: https://practice.geeksforgeeks.org/problems/largest-subarray-with-0-sum/1
+// Problem Link: https://practice.geeksforgeeks.org/problems/largest-subarray-with-0-sum/1
 // Solution Link: https://takeuforward.org/data-structure/length-of-the-longest-subarray-with-zero-sum/
 
 // Approach #1: Brute Force; Time Complexity: O(N^2), Space Complexity: O(1)

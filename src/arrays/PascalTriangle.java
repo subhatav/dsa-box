@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-// LeetCode Link: https://leetcode.com/problems/pascals-triangle/
+// Problem Link: https://leetcode.com/problems/pascals-triangle/
 
 // Approach: Add Elements of last Row as Required; Time Complexity: O(N * N/2) = O(N^2)
 

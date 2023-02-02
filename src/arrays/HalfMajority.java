@@ -1,6 +1,6 @@
 package arrays;
 
-// LeetCode Link: https://leetcode.com/problems/majority-element/
+// Problem Link: https://leetcode.com/problems/majority-element/
 // Solution Link: https://takeuforward.org/data-structure/find-the-majority-element-that-occurs-more-than-n-2-times/
 
 // Approach #1: Brute Force; Time Complexity: O(N^2)

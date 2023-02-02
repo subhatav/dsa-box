@@ -1,6 +1,6 @@
 package arrays;
 
-// LeetCode Link: https://leetcode.com/problems/minimum-window-substring/
+// Problem Link: https://leetcode.com/problems/minimum-window-substring/
 
 // Approach: Sliding Window Technique; Time Complexity: O(|S| + |T|), Space Complexity: O(|S| + |T|)
 

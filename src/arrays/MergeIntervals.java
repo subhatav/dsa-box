@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 
-// LeetCode Link: https://leetcode.com/problems/merge-intervals/
+// Problem Link: https://leetcode.com/problems/merge-intervals/
 
 // Approach: Sort, Check if Overlapping & Merge/Extend accordingly; Time Complexity: O(NlogN + N) = O(NlogN)
 
