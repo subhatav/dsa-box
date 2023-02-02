@@ -2,7 +2,7 @@ package linkedlists;
 
 import linkedlists.CustomLinkedList.LinkedNode;
 
-// LeetCode Link: https://leetcode.com/problems/reverse-linked-list-ii/
+// Problem Link: https://leetcode.com/problems/reverse-linked-list-ii/
 // Solution Link: https://leetcode.com/problems/reverse-linked-list-ii/solutions/30666/simple-java-solution-with-clear-explanation/
 
 // Approach: Use 3-Pointers; Time Complexity: O(N)

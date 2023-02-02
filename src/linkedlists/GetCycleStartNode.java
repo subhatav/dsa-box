@@ -2,7 +2,7 @@ package linkedlists;
 
 import linkedlists.CustomLinkedList.LinkedNode;
 
-// LeetCode Link: https://leetcode.com/problems/linked-list-cycle-ii/
+// Problem Link: https://leetcode.com/problems/linked-list-cycle-ii/
 // Solution Link: https://takeuforward.org/data-structure/starting-point-of-loop-in-a-linked-list/
 
 // Approach #1: Hashing Technique; Time Complexity: O(N), Space Complexity: O(N)

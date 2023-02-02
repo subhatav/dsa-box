@@ -1,6 +1,6 @@
 package linkedlists;
 
-// LeetCode Link: https://leetcode.com/problems/design-linked-list/
+// Problem Link: https://leetcode.com/problems/design-linked-list/
 
 public class CustomLinkedList {
 

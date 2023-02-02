@@ -2,7 +2,7 @@ package linkedlists;
 
 import linkedlists.CustomLinkedList.LinkedNode;
 
-// LeetCode Link: https://leetcode.com/problems/reverse-linked-list/
+// Problem Link: https://leetcode.com/problems/reverse-linked-list/
 
 // Approach #1: Recursive Technique; Time Complexity: O(N)
 // Approach #2: Iterative Technique; Time Complexity: O(N)

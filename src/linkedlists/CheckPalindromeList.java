@@ -2,7 +2,7 @@ package linkedlists;
 
 import linkedlists.CustomLinkedList.LinkedNode;
 
-// LeetCode Link: https://leetcode.com/problems/palindrome-linked-list/
+// Problem Link: https://leetcode.com/problems/palindrome-linked-list/
 // Solution Link: https://leetcode.com/problems/palindrome-linked-list/solutions/433547/palindrome-linked-list/
 
 // Approach #1: Use extra Data Structure; Time Complexity: O(N), Space Complexity: O(N)

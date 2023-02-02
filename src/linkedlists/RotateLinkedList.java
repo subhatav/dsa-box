@@ -2,7 +2,7 @@ package linkedlists;
 
 import linkedlists.CustomLinkedList.LinkedNode;
 
-// LeetCode Link: https://leetcode.com/problems/rotate-list/
+// Problem Link: https://leetcode.com/problems/rotate-list/
 // Solution Link: https://takeuforward.org/data-structure/rotate-a-linked-list/
 
 // Approach #1: Brute Force; Time Complexity: O(N * K)

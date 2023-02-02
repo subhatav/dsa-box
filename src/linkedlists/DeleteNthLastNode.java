@@ -2,7 +2,7 @@ package linkedlists;
 
 import linkedlists.CustomLinkedList.LinkedNode;
 
-// LeetCode Link: https://leetcode.com/problems/middle-of-the-linked-list/
+// Problem Link: https://leetcode.com/problems/remove-nth-node-from-end-of-list/
 // Solution Link: https://leetcode.com/problems/remove-nth-node-from-end-of-list/solutions/1164537/short-simple-one-pass-solution-w-explanation-beats-100-no-dummy-node-required/
 
 // Approach #1: 2 Passes; Time Complexity: O(N + N)
