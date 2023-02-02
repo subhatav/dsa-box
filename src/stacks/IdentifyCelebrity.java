@@ -3,7 +3,7 @@ package stacks;
 import java.util.Random;
 import java.util.Stack;
 
-// LeetCode Link: https://www.codingninjas.com/codestudio/problems/the-celebrity-problem_982769
+// Problem Link: https://www.codingninjas.com/codestudio/problems/the-celebrity-problem_982769
 // Solution Link: https://www.geeksforgeeks.org/the-celebrity-problem/
 
 // Approach #1: Brute Force; Time Complexity: O(N^2); Space Complexity: O(N)

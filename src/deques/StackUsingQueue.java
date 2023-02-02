@@ -3,7 +3,7 @@ package deques;
 import java.util.LinkedList;
 import java.util.Queue;
 
-// LeetCode Link: https://leetcode.com/problems/implement-stack-using-queues/
+// Problem Link: https://leetcode.com/problems/implement-stack-using-queues/
 // Solution Link: https://takeuforward.org/data-structure/implement-stack-using-single-queue/
 
 // Approach: Reverse Queue for each Push; Time Complexity: O(N), Space Complexity: O(N)

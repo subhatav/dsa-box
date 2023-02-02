@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import java.util.Map;
 import java.util.Queue;
 
-// GeeksForGeeks Link: https://practice.geeksforgeeks.org/problems/first-non-repeating-character-in-a-stream1216/1
+// Problem Link: https://practice.geeksforgeeks.org/problems/first-non-repeating-character-in-a-stream1216/1
 
 // Approach #1: Brute Force; Time Complexity: O(N^2)
 // Approach #2: Hash Map & Queue FIFO Technique; Time Complexity: O(N)

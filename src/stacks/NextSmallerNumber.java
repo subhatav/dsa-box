@@ -4,6 +4,10 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Stack;
 
+// Problem Link: https://www.codingninjas.com/codestudio/problems/1112581
+
+// Approach: Monotonic Stack LIFO Technique; Time Complexity: O(N); Space Complexity: O(N * 2)
+
 public class NextSmallerNumber {
 
     public ArrayList<Integer> compute(ArrayList<Integer> nums, int size) {

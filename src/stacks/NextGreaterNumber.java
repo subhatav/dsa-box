@@ -4,10 +4,10 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Stack;
 
-// LeetCode Link: https://leetcode.com/problems/next-greater-element-i/
+// Problem Link: https://leetcode.com/problems/next-greater-element-i/
 // Solution Link: https://leetcode.com/problems/next-greater-element-i/solutions/97595/java-10-lines-linear-time-complexity-o-n-with-explanation/
 
-// Approach: Monotonic Stack LIFO Technique; Time Complexity: O(N1 + N2); Space Complexity: O(2 * N1)
+// Approach: Monotonic Stack LIFO Technique; Time Complexity: O(N1 + N2); Space Complexity: O(N1 * 2)
 
 public class NextGreaterNumber {
 

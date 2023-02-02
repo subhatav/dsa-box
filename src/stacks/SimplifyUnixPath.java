@@ -2,7 +2,7 @@ package stacks;
 
 import java.util.Stack;
 
-// LeetCode Link: https://leetcode.com/problems/simplify-path/
+// Problem Link: https://leetcode.com/problems/simplify-path/
 
 // Approach: Stack LIFO Technique; Time Complexity: O(N)
 

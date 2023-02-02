@@ -2,7 +2,7 @@ package stacks;
 
 import java.util.Stack;
 
-// LeetCode Link: https://leetcode.com/problems/valid-parentheses/
+// Problem Link: https://leetcode.com/problems/valid-parentheses/
 // Solution Link: https://www.youtube.com/watch?v=3gqYc56p9qU&t=309s
 
 // Approach: Odd Length Check & Stack LIFO Technique; Time Complexity: O(N)
