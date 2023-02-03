@@ -11,19 +11,20 @@ public class MinimumArrows {
 
     public int compute(int[][] points) {
 
-        // Sort all the Balloons by their end positions
+        // Sort all the Balloons in Ascending Order w.r.t. their End Positions
         Arrays.parallelSort(points, Comparator.comparingInt(pair -> pair[1]));
 
-        int arrows = 1, last = points[0][1], size = points.length;
+        int arrows = 1, previous = 0, size = points.length;
 
-        for (int index = 1; index < size; index++) {
+        for (int current = 1; current < size; current++) {
 
-            // Check if the last Balloon is overlapping the current Balloon
-            if (last >= points[index][0]) continue;
+            // Verify if the current Balloon is NOT
+            // overlapping with the current Balloon
+            if (points[previous][1] < points[current][0]) {
 
-            // Increment the number of Arrows required when not overlapping
-            arrows += 1;
-            last = points[index][1];
+                arrows += 1;
+                previous = current;
+            }
         }
 
         return arrows;
