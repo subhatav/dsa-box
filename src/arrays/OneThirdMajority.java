@@ -3,7 +3,7 @@ package arrays;
 import java.util.ArrayList;
 import java.util.List;
 
-// LeetCode Link: https://leetcode.com/problems/majority-element-ii/
+// Problem Link: https://leetcode.com/problems/majority-element-ii/
 // Solution Link: https://takeuforward.org/data-structure/majority-elementsn-3-times-find-the-elements-that-appears-more-than-n-3-times-in-the-array/
 
 // Approach #1: Brute Force; Time Complexity: O(N^2)

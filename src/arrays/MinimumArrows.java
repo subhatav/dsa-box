@@ -3,7 +3,7 @@ package arrays;
 import java.util.Arrays;
 import java.util.Comparator;
 
-// LeetCode Link: https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/
+// Problem Link: https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/
 
 // Approach: Sort, Check if Overlapping & Count when NOT so; Time Complexity: O(NlogN + N) = O(NlogN)
 

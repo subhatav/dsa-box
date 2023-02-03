@@ -1,6 +1,6 @@
 package arrays;
 
-// LeetCode Link: https://leetcode.com/problems/product-of-array-except-self/
+// Problem Link: https://leetcode.com/problems/product-of-array-except-self/
 
 // Approach: Left & Right Product Arrays; Time Complexity: O(N)
 

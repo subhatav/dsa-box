@@ -1,6 +1,6 @@
 package arrays;
 
-// LeetCode Link: https://leetcode.com/problems/longest-mountain-in-array/
+// Problem Link: https://leetcode.com/problems/longest-mountain-in-array/
 
 // Approach: Traverse & Check Validity & Record Distance; Time Complexity: O(N)
 

@@ -3,7 +3,7 @@ package arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-// LeetCode Link: https://leetcode.com/problems/longest-substring-without-repeating-characters/
+// Problem Link: https://leetcode.com/problems/longest-substring-without-repeating-characters/
 // Solution Link: https://takeuforward.org/data-structure/length-of-longest-substring-without-any-repeating-character/
 
 // Approach #1: Brute Force; Time Complexity: O(N^2)

@@ -1,6 +1,6 @@
 package arrays;
 
-// LeetCode Link: https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
+// Problem Link: https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
 
 // Approach #1: Brute Force; Time Complexity: O(N^2)
 // Approach #2: Traverse & Check; Time Complexity: O(N)

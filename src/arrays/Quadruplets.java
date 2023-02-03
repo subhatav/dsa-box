@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-// LeetCode Link: https://leetcode.com/problems/4sum/
+// Problem Link: https://leetcode.com/problems/4sum/
 // Solution Link: https://takeuforward.org/data-structure/4-sum-find-quads-that-add-up-to-a-target-value/
 
 // Approach #1: Sort & (N^3) * Binary Search; Time Complexity: O(NlogN + (N^3) * logN)

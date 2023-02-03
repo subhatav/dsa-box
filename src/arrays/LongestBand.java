@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-// LeetCode Link: https://leetcode.com/problems/longest-consecutive-sequence/
+// Problem Link: https://leetcode.com/problems/longest-consecutive-sequence/
 
 // Approach #1: Brute Force; Time Complexity: O(N^3)
 // Approach #2: Sort + Traverse; Time Complexity: O(NlogN + N) = O(NlogN)

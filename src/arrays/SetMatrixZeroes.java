@@ -1,6 +1,6 @@
 package arrays;
 
-// LeetCode Link: https://leetcode.com/problems/set-matrix-zeroes/
+// Problem Link: https://leetcode.com/problems/set-matrix-zeroes/
 
 // All Approaches: Time Complexity: O(M * N)
 

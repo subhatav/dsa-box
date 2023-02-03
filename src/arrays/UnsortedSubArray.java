@@ -1,6 +1,6 @@
 package arrays;
 
-// LeetCode Link: https://leetcode.com/problems/shortest-unsorted-continuous-subarray/
+// Problem Link: https://leetcode.com/problems/shortest-unsorted-continuous-subarray/
 
 // Approach #1: Brute Force; Time Complexity: O(N^3) or O(N^2)
 // Approach #2: Sort & Compare with 2-Pointers; Time Complexity: O(NlogN + N) = O(NlogN)

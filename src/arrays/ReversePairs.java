@@ -2,10 +2,10 @@ package arrays;
 
 import java.util.ArrayList;
 
-// LeetCode Link: https://leetcode.com/problems/reverse-pairs/
+// Problem Link: https://leetcode.com/problems/reverse-pairs/
 
 // Approach #1: Brute Force; Time Complexity: O(N^2)
-// Approach #2: Divide, Count & Merge; Time Complexity: O(NlogN + N + N) = O(NlogN)
+// Approach #2: Divide, Count & Sort; Time Complexity: O(NlogN + N + N) = O(NlogN)
 
 // To-Do: Shift this Class to the "sorting" package
 
@@ -41,12 +41,12 @@ public class ReversePairs {
             count += right - (middle + 1);
         }
 
-        sort(nums, low, middle, high);
+        merge(nums, low, middle, high);
 
         return count;
     }
 
-    private void sort(int[] nums, int low, int middle, int high) {
+    private void merge(int[] nums, int low, int middle, int high) {
 
         ArrayList<Integer> merged = new ArrayList<>();
 
