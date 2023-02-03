@@ -2,7 +2,7 @@ package deques;
 
 import java.util.Stack;
 
-// LeetCode Link: https://leetcode.com/problems/implement-queue-using-stacks/
+// Problem Link: https://leetcode.com/problems/implement-queue-using-stacks/
 // Solution Link: https://takeuforward.org/data-structure/implement-queue-using-stack/
 
 // Approach: Amortized usage of two Stacks; Time Complexity: O(1), Space Complexity: O(2 * N)

@@ -3,7 +3,7 @@ package deques;
 import java.util.ArrayDeque;
 import java.util.Deque;
 
-// LeetCode Link: https://leetcode.com/problems/sliding-window-maximum/
+// Problem Link: https://leetcode.com/problems/sliding-window-maximum/
 // Solution Link: https://www.youtube.com/watch?v=DfljaUwZsOk
 
 // Approach #1: Brute Force; Time Complexity: O(N^2)

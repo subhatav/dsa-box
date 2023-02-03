@@ -3,7 +3,7 @@ package stacks;
 import java.util.ArrayList;
 import java.util.Stack;
 
-// LeetCode Link: https://www.codingninjas.com/codestudio/problems/span-of-ninja-coin_1475049
+// Problem Link: https://www.codingninjas.com/codestudio/problems/span-of-ninja-coin_1475049
 // Solution Link: https://www.youtube.com/watch?v=29Jn5xPGJHg
 
 // Approach #1: Brute Force; Time Complexity: O(N^2)

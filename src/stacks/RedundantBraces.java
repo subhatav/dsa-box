@@ -2,7 +2,7 @@ package stacks;
 
 import java.util.Stack;
 
-// LeetCode Link: https://www.interviewbit.com/problems/redundant-braces/
+// Problem Link: https://www.interviewbit.com/problems/redundant-braces/
 
 // Approach: Stack LIFO Technique & Operator Check; Time Complexity: O(N)
 
