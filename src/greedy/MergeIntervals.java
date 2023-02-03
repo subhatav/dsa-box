@@ -9,7 +9,7 @@ import java.util.List;
 
 // Approach: Sort, Check if Overlapping & Merge/Extend accordingly; Time Complexity: O(NlogN + N) = O(NlogN)
 
-public class OverlapIntervals {
+public class MergeIntervals {
 
     public int[][] compute(int[][] intervals) {
 
