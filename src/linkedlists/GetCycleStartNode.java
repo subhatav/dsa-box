@@ -9,7 +9,7 @@ import linkedlists.CustomLinkedList.LinkedNode;
 // Approach #2: Tortoise-Hare Technique; Time Complexity: O(N), Space Complexity: O(1)
 
 public class GetCycleStartNode {
-    
+
     public LinkedNode compute(LinkedNode head) {
 
         LinkedNode slow = head, fast = head;

@@ -9,7 +9,7 @@ import linkedlists.CustomLinkedList.LinkedNode;
 // Approach #2: Get Length, Make Cycle & Disconnect; Time Complexity: O(N + Times)
 
 public class RotateLinkedList {
-    
+
     public LinkedNode compute(LinkedNode start, int k) {
 
         // Handle the Edge Cases

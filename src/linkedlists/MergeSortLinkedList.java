@@ -14,7 +14,7 @@ public class MergeSortLinkedList {
 
         return split(head); // Divide & Merge LL
     }
-    
+
     protected LinkedNode split(LinkedNode start) {
 
         if (start == null) return start;

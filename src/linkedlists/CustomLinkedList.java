@@ -7,13 +7,13 @@ public class CustomLinkedList {
     static class LinkedNode {
 
         int value = 0;
+
         LinkedNode next = null;
 
         LinkedNode(int value) { this.value = value; }
     }
 
-    private LinkedNode head;
-    private LinkedNode tail;
+    private LinkedNode head, tail;
 
     private int size;
 
@@ -84,7 +84,7 @@ public class CustomLinkedList {
 
         if (index == 0) addAtHead(value);
         else if (index == this.size) addAtTail(value);
-        
+
         else {
 
             LinkedNode back = getNodeAt(index - 1);
@@ -145,7 +145,7 @@ public class CustomLinkedList {
 
         if (index == 0) deleteFirst();
         else if (index == this.size - 1) deleteLast();
-        
+
         else {
 
             LinkedNode back = getNodeAt(index - 1);
