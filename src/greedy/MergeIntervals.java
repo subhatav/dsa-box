@@ -1,4 +1,4 @@
-package arrays;
+package greedy;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -13,7 +13,7 @@ public class MergeIntervals {
 
     public int[][] compute(int[][] intervals) {
 
-        // Sort all the Intervals by their start positions
+        // Sort all the Intervals in Ascending Order w.r.t. their Start Positions
         Arrays.parallelSort(intervals, Comparator.comparingInt(interval -> interval[0]));
 
         List<int[]> results = new ArrayList<>();
@@ -25,12 +25,14 @@ public class MergeIntervals {
 
             if (merged[1] >= current[0])
 
-                // If the Intervals are overlapping, extend its end position if required
+                // If the Intervals are overlapping,
+                // extend the current End Position
                 merged[1] = Math.max(merged[1], current[1]);
 
             else {
 
-                // If the Intervals are disjoint, add the new Interval to the Results
+                // If the Intervals are disjoint,
+                // add the new Interval to the Results
                 merged = current;
                 results.add(merged);
             }
