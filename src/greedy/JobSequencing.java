@@ -11,8 +11,8 @@ public class JobSequencing {
 
     public int compute(int[][] jobs) {
 
-        // Sort the Jobs in Decreasing Order by their Profits
-        Arrays.sort(jobs, (now, then) -> (then[1] - now[1]));
+        // Sort ALL the Jobs in Non-increasing Order w.r.t. their Profits
+        Arrays.sort(jobs, (now, then) -> Integer.compare(then[1], now[1]));
 
         int profit = 0, size = jobs.length;
         boolean[] days = new boolean[size];
