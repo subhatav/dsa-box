@@ -5,9 +5,10 @@ import java.util.Arrays;
 // Problem Link: https://leetcode.com/problems/maximum-units-on-a-truck/
 // Solution Link: https://leetcode.com/problems/maximum-units-on-a-truck/solutions/1271374/js-python-java-c-simple-sort-solution-w-explanation/
 
-// Approach: Sort & Use Fractional Knapsack Technique; Time Complexity: O(NlogN), Space Complexity: O(N)
+// Approach: Sort according to Units & Use Greedy Knapsack Technique
+// Time Complexity: O(NlogN), Space Complexity: O(1) or O(N) depending on Sorting Algorithm
 
-public class MaxProfitBoxes {
+public class MostProfitBoxes {
     
     public int compute(int[][] boxTypes, int truckSize) {
 
