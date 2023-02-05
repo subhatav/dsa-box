@@ -8,7 +8,7 @@ import java.util.List;
 // Solution Link: https://leetcode.com/problems/permutations/solutions/18239/a-general-approach-to-backtracking-questions-in-java-subsets-permutations-combination-sum-palindrome-partioning/
 // Complexity Link: https://medium.com/@vasanths294/permutation-combination-subset-time-complexity-eca924e00071
 
-// Approach: Use Backtracking Technique; Time Complexity: O(N! * N)
+// Approach: Use Backtracking Technique; Time Complexity: O(NlogN + N! * N)
 
 public class UniquePermutations {
 
@@ -38,9 +38,9 @@ public class UniquePermutations {
                 int number = nums[index];
 
                 boolean isConsecutiveDuplicate = (index > 0) && (number == nums[index - 1]);
-                boolean isPreviousDuplicateNotUsed = isConsecutiveDuplicate && !used[index - 1];
+                boolean isLastDuplicateNotUsed = isConsecutiveDuplicate && !used[index - 1];
 
-                if (!used[index] && !isPreviousDuplicateNotUsed) {
+                if (!used[index] && !isLastDuplicateNotUsed) {
 
                     used[index] = true;
                     subset.add(number);
