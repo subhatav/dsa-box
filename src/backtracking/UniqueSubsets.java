@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 
 // Problem Link: https://leetcode.com/problems/subsets-ii/
-// Solution Link: https://leetcode.com/problems/subsets/solutions/27281/a-general-approach-to-backtracking-questions-in-java-subsets-permutations-combination-sum-palindrome-partitioning/?orderBy=most_votes
+// Solution Link: https://leetcode.com/problems/subsets/solutions/27281/a-general-approach-to-backtracking-questions-in-java-subsets-permutations-combination-sum-palindrome-partitioning/
 // Complexity Link: https://medium.com/@vasanths294/permutation-combination-subset-time-complexity-eca924e00071
 
 // Approach: Use Backtracking Technique; Time Complexity: O(NlogN + 2^N)

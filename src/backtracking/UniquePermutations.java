@@ -23,13 +23,13 @@ public class UniquePermutations {
         return permutations;
     }
 
-    private void backtrack(List<List<Integer>> subsets, List<Integer> subset, int[] nums, boolean[] used) {
+    private void backtrack(List<List<Integer>> permutations, List<Integer> subset, int[] nums, boolean[] used) {
 
         // ALL the Indices are being USED
         if (subset.size() == nums.length) {
 
-            // Include a deep Copy of the Subset
-            subsets.add(new ArrayList<>(subset));
+            // Include a deep Copy of the Permutation
+            permutations.add(new ArrayList<>(subset));
 
         } else {
 
@@ -45,7 +45,7 @@ public class UniquePermutations {
                     used[index] = true;
                     subset.add(number);
 
-                    backtrack(subsets, subset, nums, used);
+                    backtrack(permutations, subset, nums, used);
 
                     used[index] = false;
                     subset.remove(subset.size() - 1);
