@@ -25,13 +25,10 @@ public class UniquePermutations {
 
     private void backtrack(List<List<Integer>> permutations, List<Integer> subset, int[] nums, boolean[] used) {
 
-        // ALL the Indices are being USED
-        if (subset.size() == nums.length) {
+        // When ALL the Indices are CHECKED, include a deep Copy of the Permutation
+        if (subset.size() == nums.length) permutations.add(new ArrayList<>(subset));
 
-            // Include a deep Copy of the Permutation
-            permutations.add(new ArrayList<>(subset));
-
-        } else {
+        else {
 
             for (int index = 0; index < nums.length; index++) {
 
