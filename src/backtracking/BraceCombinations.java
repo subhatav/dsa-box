@@ -18,7 +18,7 @@ public class BraceCombinations {
         return combinations;
     }
 
-    public void backtrack(List<String> combinations, String expression, int pairs, int opening, int closing) {
+    private void backtrack(List<String> combinations, String expression, int pairs, int opening, int closing) {
 
         // Include the Expression to Results when ALL Brace Pairs are consumed
         if ((expression.length() / 2.0) == pairs) combinations.add(expression);

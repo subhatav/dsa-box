@@ -17,7 +17,7 @@ public class UniquePermutations {
         List<List<Integer>> permutations = new ArrayList<>();
         boolean[] frequencies = new boolean[nums.length];
 
-        Arrays.sort(nums); // Sort all the Numbers in Ascending Order
+        Arrays.sort(nums); // Sort ALL the Numbers in Ascending Order
         backtrack(permutations, new ArrayList<>(), nums, frequencies);
 
         return permutations;

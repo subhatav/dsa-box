@@ -28,7 +28,7 @@ public class LetterCombinations {
 
         else {
 
-            // Extract ALL the LETTERS for a Particular DIGIT
+            // Extract ALL the Letters for a Particular DIGIT
             String letters = KEYS[digits.charAt(index) - '0'];
 
             for (char letter : letters.toCharArray()) {
