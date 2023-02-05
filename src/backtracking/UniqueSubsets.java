@@ -26,7 +26,7 @@ public class UniqueSubsets {
 
     private void backtrack(List<List<Integer>> subsets, List<Integer> subset, int[] nums, int start) {
 
-        // Include a deep-copy of the Subset
+        // Include a deep Copy of the Subset
         subsets.add(new ArrayList<>(subset));
 
         for (int index = start; index < nums.length; index++) {
