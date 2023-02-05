@@ -7,8 +7,6 @@ import java.util.List;
 // Problem Link: https://leetcode.com/problems/combination-sum-ii/
 // Solution Link: https://leetcode.com/problems/combination-sum/solutions/16502/a-general-approach-to-backtracking-questions-in-java-subsets-permutations-combination-sum-palindrome-partitioning/
 
-// Approach: Use Backtracking Technique, follow Solution Link
-
 // Time Complexity: O(2^N * K), Space Complexity: O(K * X)
 // where N == Number of Elements, K == Average Length of every Combinations, X == Number of Possible Combinations
 
@@ -20,7 +18,7 @@ public class SumCombinations {
 
         Arrays.sort(nums); // Sort all the Numbers first
 
-        // Create the permissible Combinations from the First Index
+        // Create the Permissible Combinations from the First Index
         backtrack(combos, new ArrayList<>(), nums, target, 0);
 
         return combos;
