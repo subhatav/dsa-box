@@ -2,6 +2,8 @@ package hashing;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.Random;
 
 // Problem Link: https://leetcode.com/problems/insert-delete-getrandom-o1/
@@ -11,10 +13,10 @@ import java.util.Random;
 
 public class CustomRandomSet {
 
-    HashMap<Integer, Integer> hash;
-    ArrayList<Integer> array;
+    private Map<Integer, Integer> hash;
+    private List<Integer> array;
 
-    Random random;
+    private Random random;
 
     public CustomRandomSet() {
 
@@ -26,7 +28,6 @@ public class CustomRandomSet {
 
     public boolean insert(int value) {
 
-        // Skip if the Set already has the "value"
         if (hash.containsKey(value)) return false;
 
         hash.put(value, array.size());
@@ -37,7 +38,6 @@ public class CustomRandomSet {
 
     public boolean remove(int value) {
 
-        // Skip if this Set do not have the "value"
         if (!hash.containsKey(value)) return false;
 
         int index = hash.get(value);
@@ -45,7 +45,7 @@ public class CustomRandomSet {
 
         if (index < last) {
 
-            // Swap with the Last Item
+            // Swap with the LAST Item
             int swap = array.get(last);
 
             hash.put(swap, index);
