@@ -22,7 +22,7 @@ public class HalfMajority {
             // the value of the Frequency Variable will become more than one
 
             if (count == 0) major = num;
-            
+
             if (num == major) count += 1;
             else count -= 1;
         }
@@ -30,7 +30,7 @@ public class HalfMajority {
         count = 0; // Reset the Frequency Variable to zero
 
         for (int num : nums) if (num == major) count += 1;
-        
+
         return (count > (nums.length / 2)) ? major : -1;
     }
 }

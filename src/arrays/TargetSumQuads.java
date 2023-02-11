@@ -10,10 +10,10 @@ import java.util.List;
 // Approach #1: Sort & (N^3) * Binary Search; Time Complexity: O(NlogN + (N^3) * logN)
 // Approach #2: Sort & (N^2) * 2-Sum Approach; Time Complexity: O(NlogN + (N^2) * N) = O(N^3)
 
-public class Quadruplets {
-    
-    // Iteratively convert K Sum Problem into (K - 1) Sum Problem,
-    // until a Pair Sum (Two Sum) Problem is found for approaching
+public class TargetSumQuads {
+
+    // Iteratively convert K-Sum Problem into (K - 1) Sum Problem,
+    // until a Pair-Sum (Two-Sum) Problem is found for approaching
 
     public List<List<Integer>> compute(int[] nums, int target) {
 

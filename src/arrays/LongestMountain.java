@@ -5,9 +5,9 @@ package arrays;
 // Approach: Traverse & Check Validity & Record Distance; Time Complexity: O(N)
 
 public class LongestMountain {
-    
+
     public int compute(int[] nums) {
-        
+
         int index = 0, result = 0, distance = nums.length;
 
         while (distance >= 3 && index < distance) {

@@ -9,7 +9,7 @@ import java.util.List;
 // Approach #1: Brute Force; Time Complexity: O(N^3)
 // Approach #2: Sort & (N * Pair Sum); Time Complexity: O(NlogN + N^2) = O(N^2)
 
-public class Triplets {
+public class ZeroSumTriplets {
 
     public List<List<Integer>> compute(int[] nums) {
 
