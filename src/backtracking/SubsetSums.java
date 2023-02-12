@@ -24,7 +24,8 @@ public class SubsetSums {
 
     private void backtrack(ArrayList<Integer> sums, int sum, int[] nums, int index) {
 
-        if (index == nums.length) sums.add(sum); // Include the Sum of the Current Subset
+        // Include the Sum of the Current Subset
+        if (index == nums.length) sums.add(sum);
 
         else {
 
