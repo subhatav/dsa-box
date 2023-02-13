@@ -1,4 +1,4 @@
-package arrays;
+package sorting;
 
 // Problem Link: https://leetcode.com/problems/merge-sorted-array/
 
