@@ -1,4 +1,4 @@
-package arrays;
+package sorting;
 
 // Problem Link: https://leetcode.com/problems/sort-colors/
 // Solution Link: https://www.geeksforgeeks.org/sort-an-array-of-0s-1s-and-2s/
