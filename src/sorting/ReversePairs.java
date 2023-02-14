@@ -3,11 +3,10 @@ package sorting;
 import java.util.ArrayList;
 
 // Problem Link: https://leetcode.com/problems/reverse-pairs/
+// Solution Link: https://takeuforward.org/data-structure/count-reverse-pairs/
 
 // Approach #1: Brute Force; Time Complexity: O(N^2)
 // Approach #2: Divide, Count & Sort; Time Complexity: O(NlogN + N + N) = O(NlogN)
-
-// To-Do: Shift this Class to the "sorting" package
 
 public class ReversePairs {
 
@@ -36,7 +35,9 @@ public class ReversePairs {
 
         for (int left = low; left <= middle; left++) {
 
-            while (right <= high && (nums[left] / 2.0) > nums[right]) right++;
+            boolean reverse = (nums[left] / 2.0) > nums[right];
+
+            while (right <= high && reverse) right++;
 
             count += right - (middle + 1);
         }
