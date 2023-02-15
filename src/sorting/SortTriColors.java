@@ -1,4 +1,4 @@
-package arrays;
+package sorting;
 
 // Problem Link: https://leetcode.com/problems/sort-colors/
 // Solution Link: https://www.geeksforgeeks.org/sort-an-array-of-0s-1s-and-2s/
@@ -13,13 +13,14 @@ public class SortTriColors {
 
     public void compute(int[] nums) {
 
-        int red = 0, white = 0, blue = nums.length - 1;
-        
-        while (white <= blue) {
+        // The 2-Pointers "low" and "high"
+        // MARK the Start and End of WHITE
+        int low = 0, high = nums.length - 1;
 
-            if (nums[white] == 0) swap(nums, red++, white++);
-            else if (nums[white] == 2) swap(nums, white, blue--);
-            else white++;
+        for (int index = low; index <= high; index++) {
+
+            if (nums[index] == 0) swap(nums, low++, index);
+            else if (nums[index] == 2) swap(nums, index--, high--);
         }
     }
 
