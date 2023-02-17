@@ -1,4 +1,4 @@
-package arrays;
+package searching;
 
 import java.util.Arrays;
 
@@ -18,7 +18,7 @@ public class SearchMatrix {
 
             if (target <= row[capacity - 1]) {
 
-                return Arrays.binarySearch(row, target) < 0 ? false : true;
+                return Arrays.binarySearch(row, target) >= 0;
             }
         }
 
