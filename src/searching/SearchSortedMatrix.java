@@ -1,4 +1,4 @@
-package arrays;
+package searching;
 
 import java.util.Arrays;
 
@@ -8,7 +8,7 @@ import java.util.Arrays;
 // Approach #2: Binary Search for entire Matrix; Time Complexity: O(log(M * N))
 // Approach #3: Binary Search for a single Row; Time Complexity: O(M + logN)
 
-public class SearchMatrix {
+public class SearchSortedMatrix {
 
     public boolean compute(int[][] matrix, int target) {
 
@@ -18,7 +18,7 @@ public class SearchMatrix {
 
             if (target <= row[capacity - 1]) {
 
-                return Arrays.binarySearch(row, target) < 0 ? false : true;
+                return Arrays.binarySearch(row, target) >= 0;
             }
         }
 
