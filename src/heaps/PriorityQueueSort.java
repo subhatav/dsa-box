@@ -1,21 +1,22 @@
 package heaps;
 
+import java.util.Collections;
 import java.util.PriorityQueue;
 import java.util.Queue;
 
 // Problem Link: https://leetcode.com/problems/sort-an-array/
 // Solution Link: https://www.geeksforgeeks.org/priorityqueue-comparator-method-in-java/
 
-// Average Time Complexity: O(NlogN); Worst Time Complexity: O(NlogN); Worst Space Complexity: O(1)
+// Average Time Complexity: O(NlogN), Worst Time Complexity: O(NlogN); Worst Space Complexity: O(1)
 
 public class PriorityQueueSort {
 
-    Queue<Integer> priority;
+    private Queue<Integer> priority;
 
     public int[] compute(int[] nums) {
 
-        // Initiate the Priority Queue order as a Max-Heap
-        priority = new PriorityQueue<>((n1, n2) -> n2 - n1);
+        // Initiate the order of the Priority Queue as a Max-Heap
+        priority = new PriorityQueue<>(Collections.reverseOrder());
 
         sort(nums, nums.length);
 
