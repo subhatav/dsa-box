@@ -6,7 +6,7 @@ import java.util.Random;
 // Solution Link: https://leetcode.com/problems/kth-largest-element-in-an-array/solutions/60300/java-quick-select/
 
 // Approach: Use Quick Sorting with the Binary Search Technique
-// Average Time Complexity: O(N); Worst Time Complexity: O(N^2)
+// Average Time Complexity: O(N), Worst Time Complexity: O(N^2)
 
 public class QuickKthSelect {
 

@@ -8,7 +8,7 @@ package sorting;
 //              find their proper Indices in the Sorted whole-array; Time Complexity: O(N)
 
 public class UnsortedSubArray {
-    
+
     public int compute(int[] nums) {
 
         int last = nums.length - 1;
@@ -37,7 +37,7 @@ public class UnsortedSubArray {
             // = the unsorted sub-array AT LEAST needs to begin here
             if (nums[last - index] > low) left = last - index;
         }
-        
+
         return right - left + 1;
     }
 }

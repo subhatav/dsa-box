@@ -5,7 +5,7 @@ import java.util.Random;
 // Problem Link: https://leetcode.com/problems/sort-an-array/
 // Solution Link: https://leetcode.com/problems/sort-an-array/solutions/492042/7-sorting-algorithms-quick-sort-top-down-bottom-up-merge-sort-heap-sort-etc/
 
-// Average Time Complexity: O(NlogN); Worst Time Complexity: O(N^2); Worst Space Complexity: O(logN)
+// Average Time Complexity: O(NlogN), Worst Time Complexity: O(N^2); Worst Space Complexity: O(logN)
 
 public class QuickSortArray {
 
