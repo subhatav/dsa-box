@@ -16,7 +16,7 @@ public class HeapSortArray {
 
     protected void sort(int[] nums, int size) {
 
-        // Node "internal" ==== Index
+        // Node "internal" <==> Index
         // of the First Non-Leaf Node
         int internal = (size / 2) - 1;
 
