@@ -1,4 +1,4 @@
-package sorting;
+package heaps;
 
 // Problem Link: https://leetcode.com/problems/sort-an-array/
 // Solution Link: https://www.programiz.com/dsa/heap-sort
