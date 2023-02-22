@@ -8,7 +8,7 @@ import java.util.Queue;
 
 // Approach: Optimized Priority Queue; Time Complexity: O(NlogN), Space Complexity: O(N)
 
-public class MinRopeCosts {
+public class MinConnectCosts {
 
     public long compute(int[] nums) {
 
