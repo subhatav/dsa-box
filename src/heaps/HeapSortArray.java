@@ -1,9 +1,9 @@
-package sorting;
+package heaps;
 
 // Problem Link: https://leetcode.com/problems/sort-an-array/
 // Solution Link: https://www.programiz.com/dsa/heap-sort
 
-// Average Time Complexity: O(NlogN); Worst Time Complexity: O(NlogN); Worst Space Complexity: O(1)
+// Average Time Complexity: O(NlogN), Worst Time Complexity: O(NlogN); Worst Space Complexity: O(1)
 
 public class HeapSortArray {
 
@@ -16,7 +16,7 @@ public class HeapSortArray {
 
     protected void sort(int[] nums, int size) {
 
-        // Node "internal" ==== Index
+        // Node "internal" <==> Index
         // of the First Non-Leaf Node
         int internal = (size / 2) - 1;
 
