@@ -30,8 +30,8 @@ public class LongestPalindrome {
                 right += 1; // Do EXPANDING on the RIGHT Side
             }
 
-            left += 1; // Palindrome STARTS at [left + 1]
-            right -= 1; // Palindrome ENDS at [right - 1]
+            left += 1; // SHRINK as Palindrome STARTS at [left + 1]
+            right -= 1; // SHRINK as Palindrome ENDS at [right - 1]
 
             if (right - left > finish - start) {
 
