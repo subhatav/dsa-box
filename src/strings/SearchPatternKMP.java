@@ -10,14 +10,14 @@ package strings;
 
 public class SearchPatternKMP {
 
-    private int[] lps;
+    private int[] lps; // Array "lps[]" == LPS Table
 
     public int compute(String haystack, String needle) {
 
         int n = haystack.length();
         int m = needle.length();
 
-        // Build the LPS
+        // BUILD the LPS
         table(needle, m);
 
         int j = 0, i = 0;
