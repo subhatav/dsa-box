@@ -19,7 +19,7 @@ public class ZeroSumTriplets {
 
         Arrays.sort(nums);
 
-        for (int index = 0; index < size - 2; index++) {
+        for (int index = 0; index < size - 2; index += 1) {
 
             int left = index + 1, right = size - 1;
 
@@ -31,8 +31,8 @@ public class ZeroSumTriplets {
 
                 int sum = num + nums[left] + nums[right];
 
-                if (sum < 0) left += 1;
-                else if (sum > 0) right -= 1;
+                if (sum > 0) right -= 1;
+                else if (sum < 0) left += 1;
 
                 else {
 

@@ -37,8 +37,8 @@ public class TargetSumQuads {
 
                     long tertiary = nums[third] + nums[fourth];
 
-                    if (tertiary < secondary) third += 1;
-                    else if (tertiary > secondary) fourth -= 1;
+                    if (tertiary > secondary) fourth -= 1;
+                    else if (tertiary < secondary) third += 1;
 
                     else {
 

@@ -9,7 +9,7 @@ import java.util.Map;
 // Approach #2: Sort & Binary Search; Time Complexity: O(NlogN + NlogN) = O(NlogN)
 // Approach #3: Set; Time Complexity: O(N)
 
-public class ZeroSumPairs {
+public class ZeroSumDuplets {
 
     public int[] compute(int[] nums, int target) {
 
