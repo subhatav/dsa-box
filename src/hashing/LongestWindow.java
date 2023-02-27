@@ -1,4 +1,4 @@
-package arrays;
+package hashing;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -16,8 +16,10 @@ public class LongestWindow {
 
         Map<Character, Integer> window = new HashMap<>();
 
-        int ans = 0, size = str.length();
+        int size = str.length();
         int left = 0, right = 0;
+
+        int ans = 0;
 
         if (size <= 1) return size;
 
@@ -28,7 +30,7 @@ public class LongestWindow {
 
             if (temp >= left) left = temp + 1;
 
-            window.put(ch, right++);
+            window.put(ch, right += 1);
 
             ans = Math.max(ans, right - left);
         }
