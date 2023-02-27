@@ -12,29 +12,31 @@ import java.util.Map;
 
 public class LongestWindow {
 
+    private Map<Character, Integer> window;
+
     public int compute(String str) {
 
-        Map<Character, Integer> window = new HashMap<>();
+        window = new HashMap<>();
 
         int size = str.length();
-        int left = 0, right = 0;
+        int low = 0, high = 0;
 
-        int ans = 0;
+        int answer = 0;
 
         if (size <= 1) return size;
 
-        while (right < size) {
+        while (high < size) {
 
-            char ch = str.charAt(right);
-            int temp = window.getOrDefault(ch, -1);
+            char ch = str.charAt(high);
+            int last = window.getOrDefault(ch, -1);
 
-            if (temp >= left) left = temp + 1;
+            if (last >= low) low = last + 1;
 
-            window.put(ch, right += 1);
+            window.put(ch, high += 1);
 
-            ans = Math.max(ans, right - left);
+            answer = Math.max(answer, high - low);
         }
 
-        return ans;
+        return answer;
     }
 }

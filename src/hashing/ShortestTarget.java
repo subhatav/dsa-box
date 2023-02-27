@@ -1,35 +1,38 @@
 package hashing;
 
 // Problem Link: https://leetcode.com/problems/minimum-window-substring/
+// Solution Link: https://leetcode.com/problems/minimum-window-substring/solutions/26808/here-is-a-10-line-template-that-can-solve-most-substring-problems/comments/25816
 
-// Approach: Use Sliding HASH Window Technique
-// Time Complexity: O(|S| + |T|), Space Complexity: O(|S| + |T|)
+// Approach: Retain HASHED and Sliding Window for TARGET
+// Time Complexity: O(|S| + |T|), Space Complexity: O(1)
 
 public class ShortestTarget {
 
     public String compute(String str, String tar) {
 
-        int matched = 0; // Number of Unique Characters forming the Target
-        int left = 0, right = 0, start = -1;
         int size = str.length(), shortest = size + 1;
+        int left = 0, right = 0, start = -1;
 
         int[] counter = new int[128];
 
-        if (size == 1 && tar.length() == 1 && str.equals(tar)) return tar;
+        int matched = 0; // Unique Chars in the Target
 
-        for (char ch : tar.toCharArray()) if (++counter[ch] == 1) matched++;
+        for (char ch : tar.toCharArray()) {
+
+            if (++counter[ch] == 1) matched += 1;
+        }
 
         while (right < size) {
 
-            // Add character from the RIGHT
+            // ADD Character from the RIGHT
             char added = str.charAt(right++);
 
-            // If "matched" becomes NEGATIVE, then substring
-            // has MORE characters than the minimum required
-            if (--counter[added] == 0) matched--;
+            // If "matched" becomes NEGATIVE, then Substring
+            // has MORE Characters than the MINIMUM required
+            if (--counter[added] == 0) matched -= 1;
 
-            // If "matched" becomes ZERO, then substring
-            // contains ALL the characters in the target
+            // If "matched" becomes ZERO, then Substring
+            // contains ALL the Characters in the Target
             while (matched == 0) {
 
                 int window = right - left;
@@ -40,15 +43,17 @@ public class ShortestTarget {
                     start = left;
                 }
 
-                // Delete character from the LEFT
+                // DELETE Character from the LEFT
                 char deleted = str.charAt(left++);
 
-                // If "matched" becomes POSITIVE, then substring
-                // has LESS characters than the minimum required
-                if (++counter[deleted] > 0) matched++;
+                // If "matched" becomes POSITIVE, then Substring
+                // has LESS Characters than the MINIMUM required
+                if (++counter[deleted] > 0) matched += 1;
             }
         }
 
-        return (start == -1) ? "" : str.substring(start, start + shortest);
+        if (start == -1) return "";
+
+        return str.substring(start, start + shortest);
     }
 }

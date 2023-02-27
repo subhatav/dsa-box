@@ -15,8 +15,8 @@ import java.util.Map;
 
 public class GroupAnagrams {
 
-    // Map "map" == Indices are ANAGRAMS;
-    // Values are ALL the GROUPED Strings
+    // Map "map" == Keys -> BASIC Strings;
+    // Values -> Group of MATCHED Anagrams
     private Map<String, List<String>> map;
 
     public List<List<String>> compute(String[] strs) {
