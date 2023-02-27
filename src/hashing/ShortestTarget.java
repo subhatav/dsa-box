@@ -1,18 +1,19 @@
-package arrays;
+package hashing;
 
 // Problem Link: https://leetcode.com/problems/minimum-window-substring/
 
-// Approach: Sliding Window Technique; Time Complexity: O(|S| + |T|), Space Complexity: O(|S| + |T|)
+// Approach: Use Sliding HASH Window Technique
+// Time Complexity: O(|S| + |T|), Space Complexity: O(|S| + |T|)
 
 public class ShortestTarget {
 
     public String compute(String str, String tar) {
 
-        int[] counter = new int[128];
-
         int matched = 0; // Number of Unique Characters forming the Target
         int left = 0, right = 0, start = -1;
         int size = str.length(), shortest = size + 1;
+
+        int[] counter = new int[128];
 
         if (size == 1 && tar.length() == 1 && str.equals(tar)) return tar;
 
