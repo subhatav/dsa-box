@@ -1,4 +1,4 @@
-package arrays;
+package maths;
 
 // Problem Link: https://www.codingninjas.com/codestudio/problems/modular-exponentiation_1082146
 // Solution Link: https://www.geeksforgeeks.org/modular-exponentiation-power-in-modular-arithmetic/
