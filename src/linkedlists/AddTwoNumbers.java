@@ -2,7 +2,7 @@ package linkedlists;
 
 import linkedlists.CustomLinkedList.LinkedNode;
 
-// LeetCode Link: https://leetcode.com/problems/add-two-numbers/
+// Problem Link: https://leetcode.com/problems/add-two-numbers/
 // Solution Link: https://leetcode.com/problems/add-two-numbers/solutions/127833/add-two-numbers/
 
 // Approach: Elementary Mathematics; Time Complexity: O(max(N1, N2))

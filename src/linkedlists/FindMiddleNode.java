@@ -2,7 +2,7 @@ package linkedlists;
 
 import linkedlists.CustomLinkedList.LinkedNode;
 
-// LeetCode Link: https://leetcode.com/problems/middle-of-the-linked-list/
+// Problem Link: https://leetcode.com/problems/middle-of-the-linked-list/
 // Solution Link: https://takeuforward.org/data-structure/find-middle-element-in-a-linked-list/
 
 // Approach #1: Brute Force; Time Complexity: O(N + (N/2))

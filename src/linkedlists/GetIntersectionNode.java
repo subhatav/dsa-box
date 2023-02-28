@@ -2,7 +2,7 @@ package linkedlists;
 
 import linkedlists.CustomLinkedList.LinkedNode;
 
-// LeetCode Link: https://leetcode.com/problems/intersection-of-two-linked-lists/
+// Problem Link: https://leetcode.com/problems/intersection-of-two-linked-lists/
 // Solution Link: https://leetcode.com/problems/intersection-of-two-linked-lists/solutions/49785/java-solution-without-knowing-the-difference-in-len/
 
 // Approach #1: Brute Force; Time Complexity: O(N1 * N2), Space Complexity: O(1)

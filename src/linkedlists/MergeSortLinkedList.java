@@ -2,7 +2,7 @@ package linkedlists;
 
 import linkedlists.CustomLinkedList.LinkedNode;
 
-// LeetCode Link: https://leetcode.com/problems/sort-list/
+// Problem Link: https://leetcode.com/problems/sort-list/
 // Solution Link: https://leetcode.com/problems/sort-list/solutions/46714/java-merge-sort-solution/
 
 // Approach #1: Top-Down Merge Sort == Recursive Technique; Time Complexity: O(NlogN), Space Complexity: O(logN)
@@ -14,7 +14,7 @@ public class MergeSortLinkedList {
 
         return split(head); // Divide & Merge LL
     }
-    
+
     protected LinkedNode split(LinkedNode start) {
 
         if (start == null) return start;
@@ -22,7 +22,7 @@ public class MergeSortLinkedList {
 
         // Node "back" == Last Node of First Half of List
         // Node "middle" == First Node of Second Half of List
-        // Node "back" == Last Node of Second Half of List
+        // Node "then" == Last Node of Second Half of List
         LinkedNode back = null, middle = start, then = start;
 
         while (then != null && then.next != null) {
@@ -32,7 +32,7 @@ public class MergeSortLinkedList {
             then = then.next.next;
         }
 
-        back.next = null; // Divide the two Halves
+        back.next = null; // Separate two Halves
 
         return sort(split(start), split(middle));
     }

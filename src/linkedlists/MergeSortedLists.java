@@ -2,7 +2,7 @@ package linkedlists;
 
 import linkedlists.CustomLinkedList.LinkedNode;
 
-// LeetCode Link: https://leetcode.com/problems/merge-two-sorted-lists/
+// Problem Link: https://leetcode.com/problems/merge-two-sorted-lists/
 // Solution Link: https://takeuforward.org/data-structure/merge-two-sorted-linked-lists/
 
 // Approach #1: Store in new Linked List; Time Complexity: O(N1 + N2), Space Complexity: O(N1 + N2)
