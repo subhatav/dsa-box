@@ -49,7 +49,7 @@ public class SetMatrixZeroes {
         }
 
         if (firstRow) {
-            
+
             for (int column = 0; column < nbColumns; column++) {
 
                 // Set the entire first Row as Zeroes, if required so

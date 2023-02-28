@@ -10,9 +10,9 @@ import java.util.Map;
 // Approach #2: Prefix Sum Technique; Time Complexity: O(N), Space Complexity: O(N)
 
 public class ZeroSumSubArray {
-    
+
     public int compute(int nums[], int length) {
-        
+
         // Key == Prefix Sum; Value == Current Index
         Map<Integer, Integer> prefixes = new HashMap<>();
 
@@ -24,7 +24,7 @@ public class ZeroSumSubArray {
 
             if (num == 0 && result == 0) result = 1;
             else sum += num;
-            
+
             if (sum == 0) result = index + 1;
 
             if (!prefixes.containsKey(sum)) prefixes.put(sum, index);

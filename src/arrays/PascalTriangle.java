@@ -45,7 +45,7 @@ public class PascalTriangle {
             // Add the inversed Row to the current Row
             curr.addAll(half);
             rows.add(new ArrayList<Integer>(curr));
-            
+
             // Update the last Row with the current Row
             last = curr;
         }

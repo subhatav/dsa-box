@@ -5,7 +5,7 @@ package arrays;
 // Approach: Left & Right Product Arrays; Time Complexity: O(N)
 
 public class ProductsArray {
-    
+
     public int[] compute(int[] nums) {
 
         int size = nums.length;
