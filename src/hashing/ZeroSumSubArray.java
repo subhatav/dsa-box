@@ -1,4 +1,4 @@
-package arrays;
+package hashing;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -18,7 +18,7 @@ public class ZeroSumSubArray {
 
         int sum = 0, result = 0;
 
-        for (int index = 0; index < length; index++) {
+        for (int index = 0; index < length; index += 1) {
 
             int num = nums[index];
 
