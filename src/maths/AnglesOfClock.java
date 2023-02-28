@@ -5,7 +5,7 @@ package maths;
 
 // Approach: Find ABSOLUTE Difference b/w ANGLES formed by the HOUR & MINUTE Areas
 
-public class AngleInClock {
+public class AnglesOfClock {
 
     public double compute(int hour, int minutes) {
 
