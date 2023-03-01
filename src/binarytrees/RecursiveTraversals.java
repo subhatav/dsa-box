@@ -1,13 +1,13 @@
 package binarytrees;
 
-import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 import binarytrees.CustomBinaryTree.TreeNode;
 
-// Problem Link #1: https://leetcode.com/problems/binary-tree-preorder-traversal/
-// Problem Link #2: https://leetcode.com/problems/binary-tree-inorder-traversal/
-// Problem Link #3: https://leetcode.com/problems/binary-tree-postorder-traversal/
+// Problem #1 Link: https://leetcode.com/problems/binary-tree-preorder-traversal/
+// Problem #2 Link: https://leetcode.com/problems/binary-tree-inorder-traversal/
+// Problem #3 Link: https://leetcode.com/problems/binary-tree-postorder-traversal/
 
 // Solutions Link: https://leetcode.com/problems/binary-tree-inorder-traversal/solutions/328601/all-dfs-traversals-preorder-postorder-inorder-in-java-in-5-lines/
 
@@ -17,7 +17,7 @@ public class RecursiveTraversals {
 
     public List<Integer> compute(TreeNode root) {
 
-        List<Integer> nums = new ArrayList<>();
+        List<Integer> nums = new LinkedList<>();
 
         pre(root, nums); // Travels [Node-Left-Right]
         in(root, nums); // Advances [Left-Node-Right]
