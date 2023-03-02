@@ -42,7 +42,7 @@ public class IterativeTraversals {
         nodes = new Stack<>();
         nodes.push(node);
 
-        while (!nodes.empty()) {
+        while (!nodes.isEmpty()) {
 
             node = nodes.pop();
             nums.addLast(node.value);
@@ -83,7 +83,7 @@ public class IterativeTraversals {
         nodes = new Stack<>();
         nodes.push(node);
 
-        while (!nodes.empty()) {
+        while (!nodes.isEmpty()) {
 
             node = nodes.pop();
             nums.addFirst(node.value);

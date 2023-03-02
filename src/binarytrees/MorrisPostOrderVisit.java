@@ -18,7 +18,7 @@ public class MorrisPostOrderVisit {
 
     public List<Integer> compute(TreeNode root) {
 
-        TreeNode node = root, last;
+        TreeNode last, node = root;
 
         nums = new LinkedList<>();
 

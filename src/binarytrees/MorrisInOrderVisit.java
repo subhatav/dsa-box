@@ -18,7 +18,7 @@ public class MorrisInOrderVisit {
 
     public List<Integer> compute(TreeNode root) {
 
-        TreeNode node = root, last;
+        TreeNode last, node = root;
 
         nums = new LinkedList<>();
 
@@ -26,7 +26,7 @@ public class MorrisInOrderVisit {
 
             if (node.left == null) {
 
-                nums.addLast(node.value);
+                nums.add(node.value);
                 node = node.right;
 
             } else {

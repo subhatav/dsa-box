@@ -8,7 +8,7 @@ import binarytrees.CustomBinaryTree.TreeNode;
 // Approach: Calculate the Maximum Sum of Heights of both Sub-Trees
 // Time Complexity: O(N); Space Complexity: O(H) in Recursion Space
 
-public class GetTreeDiameter {
+public class FindTreeDiameter {
 
     private int answer = 0;
 
