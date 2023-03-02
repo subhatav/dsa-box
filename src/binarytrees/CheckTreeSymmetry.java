@@ -30,19 +30,24 @@ public class CheckTreeSymmetry {
             && mirror(left.right, right.left);
     }
 
+    private Stack<TreeNode> nodes;
+
     public boolean compute2(TreeNode root) {
 
         if (root == null) return true;
 
-        Stack<TreeNode> nodes = new Stack<>();
+        TreeNode left = root.left;
+        TreeNode right = root.right;
 
-        nodes.push(root.left);
-        nodes.push(root.right);
+        nodes = new Stack<>();
+
+        nodes.push(left);
+        nodes.push(right);
 
         while (!nodes.isEmpty()) {
 
-            TreeNode left = nodes.pop();
-            TreeNode right = nodes.pop();
+            left = nodes.pop();
+            right = nodes.pop();
 
             if (left == null && right == null) continue;
 
