@@ -47,7 +47,7 @@ public class MorrisInOrderVisit {
                 } else {
 
                     last.right = null;
-                    nums.addLast(node.value);
+                    nums.add(node.value);
                     node = node.right;
                 }
             }

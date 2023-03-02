@@ -10,7 +10,7 @@ import binarytrees.CustomBinaryTree.TreeNode;
 
 // Solution Link: https://takeuforward.org/data-structure/preorder-inorder-postorder-traversals-in-one-traversal/
 
-// Approach: All-in-1-Go Orders Traversal Method
+// Approach: Do COUNT times EACH Node is VISITED
 // Time Complexity: O(N); Space Complexity: O(N)
 
 public class AllOrderTraversals {

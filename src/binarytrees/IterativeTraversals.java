@@ -68,7 +68,7 @@ public class IterativeTraversals {
             } else {
 
                 node = nodes.pop();
-                nums.addLast(node.value);
+                nums.add(node.value);
                 node = node.right;
             }
         }
