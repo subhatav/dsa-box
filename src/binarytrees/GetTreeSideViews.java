@@ -28,31 +28,31 @@ public class GetTreeSideViews {
         return view;
     }
 
-    private void left(TreeNode node, int level) {
+    private void left(TreeNode node, int depth) {
 
         if (node == null) return;
 
         // Make SURE that the FIRST Element of CURRENT
         // Level will be ADDED to the LIST of Elements
-        if (level == view.size()) view.add(node.value);
+        if (depth == view.size()) view.add(node.value);
 
         // PREFERENCE Order is set
         // according to SIDE taken
-        left(node.left, level + 1);
-        left(node.right, level + 1);
+        left(node.left, depth + 1);
+        left(node.right, depth + 1);
     }
 
-    private void right(TreeNode node, int level) {
+    private void right(TreeNode node, int depth) {
 
         if (node == null) return;
 
         // Make SURE that the FIRST Element of CURRENT
         // Level will be ADDED to the LIST of Elements
-        if (level == view.size()) view.add(node.value);
+        if (depth == view.size()) view.add(node.value);
 
         // PREFERENCE Order is laid
         // according to SIDE chosen
-        right(node.right, level + 1);
-        right(node.left, level + 1);
+        right(node.right, depth + 1);
+        right(node.left, depth + 1);
     }
 }

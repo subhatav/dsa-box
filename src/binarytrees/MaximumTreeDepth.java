@@ -13,29 +13,29 @@ import binarytrees.CustomBinaryTree.TreeNode;
 
 public class MaximumTreeDepth {
 
-    private Queue<TreeNode> queue;
+    private Queue<TreeNode> nodes;
 
     public int compute(TreeNode root) {
 
         if (root == null) return 0;
 
-        queue = new LinkedList<>();
+        nodes = new LinkedList<>();
 
         TreeNode node;
         int depth = 0;
 
-        queue.offer(root);
+        nodes.offer(root);
 
-        while (!queue.isEmpty()) {
+        while (!nodes.isEmpty()) {
 
-            int capacity = queue.size();
+            int capacity = nodes.size();
 
             while (capacity > 0) {
 
-                node = queue.poll();
+                node = nodes.poll();
 
-                if (node.left != null) queue.offer(node.left);
-                if (node.right != null) queue.offer(node.right);
+                if (node.left != null) nodes.offer(node.left);
+                if (node.right != null) nodes.offer(node.right);
                 
                 capacity -= 1;
             }
