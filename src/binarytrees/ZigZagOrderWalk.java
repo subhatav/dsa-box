@@ -62,9 +62,9 @@ public class ZigZagOrderWalk {
 
             level = new LinkedList<>();
 
-            int depth = nodes.size();
+            int capacity = nodes.size();
 
-            while ((depth -= 1) >= 0) {
+            while ((capacity -= 1) >= 0) {
 
                 TreeNode node = nodes.poll();
 
