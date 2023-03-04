@@ -11,7 +11,7 @@ import java.util.List;
 // Approach: Sort, Check if Overlapping & Add when NOT so; Time Complexity: O(N + NlogN + N) = O(NlogN)
 
 public class ScheduleMeetings {
-    
+
     public static List<Integer> maximumMeetings(int[] start, int[] finish) {
 
         List<Integer> result = new ArrayList<>();
@@ -19,7 +19,7 @@ public class ScheduleMeetings {
         int previous = -1, size = finish.length;
         int[][] meets = new int[size][3];
 
-        for (int time = 0; time < size; time++) {
+        for (int time = 0; time < size; time += 1) {
 
             meets[time][0] = time + 1;
             meets[time][1] = start[time];
@@ -28,7 +28,7 @@ public class ScheduleMeetings {
 
         Arrays.sort(meets, Comparator.comparingInt(meet -> meet[2]));
 
-        for (int index = 0; index < size; index++) {
+        for (int index = 0; index < size; index += 1) {
 
             if (previous < meets[index][1]) {
 

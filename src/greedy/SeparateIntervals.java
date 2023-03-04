@@ -16,7 +16,7 @@ public class SeparateIntervals {
 
         int overlapped = 1, previous = 0, size = intervals.length;
 
-        for (int current = 1; current < size; current++) {
+        for (int current = 1; current < size; current += 1) {
 
             // Verify if the current Interval is NOT
             // overlapping with the current Interval

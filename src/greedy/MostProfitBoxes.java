@@ -9,7 +9,7 @@ import java.util.Arrays;
 // Time Complexity: O(NlogN), Space Complexity: O(1) or O(N) depending on Sorting Algorithm
 
 public class MostProfitBoxes {
-    
+
     public int compute(int[][] boxTypes, int truckSize) {
 
         // Sort ALL the Box types in Non-increasing Order w.r.t. their Units

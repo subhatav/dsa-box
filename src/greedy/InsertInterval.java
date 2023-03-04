@@ -9,7 +9,7 @@ import java.util.List;
 // Approach: Follow Solution Link; Time Complexity: O(N)
 
 public class InsertInterval {
-    
+
     public int[][] insert(int[][] intervals, int[] injected) {
 
         List<int[]> results = new ArrayList<>();
