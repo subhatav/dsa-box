@@ -14,18 +14,18 @@ import binarytrees.CustomBinaryTree.TreeNode;
 // Solution [Top] Link: https://takeuforward.org/data-structure/top-view-of-a-binary-tree/
 // Solution [Bottom] Link: https://takeuforward.org/data-structure/bottom-view-of-a-binary-tree/
 
-// Approach: Traverse the Nodes LEVEL-wise and maintain a MAP of the Node VALUES w.r.t. the Line INDICES
+// Approach: Traverse the Nodes LEVEL-wise and maintain a MAP of the Node VALUES w.r.t. the Axis INDICES
 
 public class ViewTopAndBottom {
 
     static class Pair {
 
-        int line = 0;
+        int axis = 0;
         TreeNode node = null;
 
-        Pair(int line, TreeNode node) {
+        Pair(int axis, TreeNode node) {
 
-            this.line = line;
+            this.axis = axis;
             this.node = node;
         }
     }
@@ -38,7 +38,7 @@ public class ViewTopAndBottom {
         if (root == null) return new LinkedList<>();
 
         // SORT Map, according
-        // to the Line INDICES
+        // to the Axis INDICES
         lines = new TreeMap<>();
         nodes = new LinkedList<>();
 
@@ -54,16 +54,16 @@ public class ViewTopAndBottom {
 
             Pair current = nodes.poll();
 
-            int line = current.line;
+            int axis = current.axis;
             TreeNode node = current.node;
 
             TreeNode left = node.left, right = node.right;
 
-            lines.putIfAbsent(line, node.value); // To view from TOP
-            lines.put(line, node.value); // When viewing from BOTTOM
+            lines.putIfAbsent(axis, node.value); // To view from TOP
+            lines.put(axis, node.value); // When viewing from BOTTOM
 
-            if (left != null) nodes.offer(new Pair(line - 1, left));
-            if (right != null) nodes.offer(new Pair(line + 1, right));
+            if (left != null) nodes.offer(new Pair(axis - 1, left));
+            if (right != null) nodes.offer(new Pair(axis + 1, right));
         }
 
         return new LinkedList<>(lines.values());
