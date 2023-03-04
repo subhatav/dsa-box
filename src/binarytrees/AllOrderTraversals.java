@@ -18,13 +18,11 @@ public class AllOrderTraversals {
     static class Pair {
 
         int count = 0;
-
         TreeNode node = null;
 
-        public Pair(int count, TreeNode node) {
+        Pair(int count, TreeNode node) {
 
             this.count = count;
-
             this.node = node;
         }
     }
