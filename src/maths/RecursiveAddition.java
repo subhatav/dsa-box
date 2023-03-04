@@ -4,7 +4,7 @@ package maths;
 
 // Time & Auxiliary Space Complexity: O(logK), where K = (X & Y)
 
-public class RecursiveAdd {
+public class RecursiveAddition {
 
     public long add(long augend, long addend) {
 

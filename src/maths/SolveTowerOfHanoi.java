@@ -5,7 +5,7 @@ package maths;
 
 // Approach: ["src" --> "dest"] is SAME as ["src" --> "aux"] + ["aux" --> "dest"]
 
-public class TowerOfHanoi {
+public class SolveTowerOfHanoi {
 
     public long compute(int disk, int src, int dest, int aux) {
 

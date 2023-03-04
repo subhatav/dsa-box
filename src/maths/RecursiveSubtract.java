@@ -4,7 +4,7 @@ package maths;
 
 // Time & Auxiliary Space Complexity: O(logY), when doing [X - Y]
 
-public class RecursiveSub {
+public class RecursiveSubtract {
 
     public long compute(long minuend, long subtrahend) {
 
