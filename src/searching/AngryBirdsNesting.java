@@ -20,7 +20,7 @@ public class AngryBirdsNesting {
 
         while (low <= high) {
 
-            int mid = low + (high - low) / 2;
+            int mid = (low + high) >>> 1;
 
             // MAXIMIZE the OPTIMAL Space
             if (place(nests, birds, mid)) {

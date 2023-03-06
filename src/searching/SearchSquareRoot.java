@@ -16,7 +16,7 @@ public class SearchSquareRoot {
 
         while (low < high) {
 
-            int mid = low + (high - low) / 2;
+            int mid = (low + high) >>> 1;
 
             // Do the FIRST Condition Check
             if (mid > num / mid) high = mid;

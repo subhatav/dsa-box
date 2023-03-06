@@ -24,7 +24,7 @@ public class FindNonDuplicate {
 
         while (low <= high) {
 
-            int mid = (low + high) >> 1;
+            int mid = (low + high) >>> 1;
 
             // Check if the Number at "mid"
             // is a DUPLICATE in the "nums"
