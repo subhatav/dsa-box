@@ -14,8 +14,8 @@ public class SearchCircularArray {
 
         while (low <= high) {
 
-            // Get the "middle" Element Index
-            int mid = low + (high - low) / 2;
+            // Get index of Middle Number
+            int mid = (low + high) >>> 1;
 
             if (target == nums[mid]) return mid;
 

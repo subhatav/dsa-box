@@ -16,7 +16,7 @@ public class AllocateAllBooks {
 
         while (low <= high) {
 
-            long mid = low + (high - low) / 2;
+            long mid = (low + high) >>> 1;
 
             // MINIMIZE the OPTIMAL Pages
             if (place(books, shelves, mid)) {
