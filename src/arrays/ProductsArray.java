@@ -15,7 +15,7 @@ public class ProductsArray {
 
         left[0] = right[size - 1] = 1;
 
-        for (int index = 1; index < size; index++) {
+        for (int index = 1; index < size; index += 1) {
 
             int offset = size - index;
 
@@ -23,7 +23,7 @@ public class ProductsArray {
             right[offset - 1] = right[offset] * nums[offset];
         }
 
-        for (int index = 0; index < size; index++) {
+        for (int index = 0; index < size; index += 1) {
 
             nums[index] = left[index] * right[index];
         }

@@ -12,11 +12,11 @@ public class RotateMatrix {
 
         int size = matrix.length;
 
-        for (int layer = 0; layer < size / 2; layer++) {
+        for (int layer = 0; layer < size / 2; layer += 1) {
 
             int first = layer, last = size - layer - 1;
 
-            for (int index = first; index < last; index++) {
+            for (int index = first; index < last; index += 1) {
 
                 int offset = index - first;
 

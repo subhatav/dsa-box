@@ -19,7 +19,7 @@ public class PascalTriangle {
         last.add(1);
         rows.add(new ArrayList<Integer>(last));
 
-        for (int row = 1; row < numRows; row++) {
+        for (int row = 1; row < numRows; row += 1) {
 
             List<Integer> curr = new ArrayList<Integer>();
             List<Integer> half = new ArrayList<Integer>();
@@ -29,8 +29,8 @@ public class PascalTriangle {
             // Add the first Element (= 1)
             curr.add(1);
 
-            // Run the loop for half-length of the Row
-            for (int col = 1; col < mid + rem; col++) {
+            // Run the Loop for half-length of the Row
+            for (int col = 1; col < mid + rem; col += 1) {
 
                 curr.add(last.get(col - 1) + last.get(col));
             }
