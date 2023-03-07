@@ -9,13 +9,13 @@ import java.util.Map;
 // Approach #2: Sort & Binary Search; Time Complexity: O(NlogN + NlogN) = O(NlogN)
 // Approach #3: Set; Time Complexity: O(N)
 
-public class ZeroSumDuplets {
+public class ZeroSumDuplet {
 
     public int[] compute(int[] nums, int target) {
 
         Map<Integer, Integer> counter = new HashMap<>();
 
-        for (int index = 0; index < nums.length; index++) {
+        for (int index = 0; index < nums.length; index += 1) {
 
             int diff = target - nums[index];
 

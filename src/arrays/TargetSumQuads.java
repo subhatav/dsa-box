@@ -23,11 +23,11 @@ public class TargetSumQuads {
 
         Arrays.sort(nums);
 
-        for (int first = 0; first < size - 3; first++) {
+        for (int first = 0; first < size - 3; first += 1) {
 
             long primary = target - nums[first];
 
-            for (int second = first + 1; second < size - 2; second++) {
+            for (int second = first + 1; second < size - 2; second += 1) {
 
                 long secondary = primary - nums[second];
 

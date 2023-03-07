@@ -8,7 +8,7 @@ package arrays;
 // Approach #3: Insert in HashMap & Check; Time Complexity: O(N)
 // Approach #4: Boyer-Moore Majority Voting Algorithm; Time Complexity: O(N)
 
-public class HalfMajority {
+public class OneHalfMajority {
 
     public int compute(int[] nums) {
 

@@ -16,9 +16,9 @@ public class SetMatrixZeroes {
 
         boolean firstRow = false, firstColumn = false;
 
-        for (int row = 0; row < nbRows; row++) {
+        for (int row = 0; row < nbRows; row += 1) {
 
-            for (int column = 0; column < nbColumns; column++) {
+            for (int column = 0; column < nbColumns; column += 1) {
 
                 if (matrix[row][column] == 0) {
 
@@ -37,7 +37,7 @@ public class SetMatrixZeroes {
 
         for (int row = 1; row < nbRows; row++) {
 
-            for (int column = 1; column < nbColumns; column++) {
+            for (int column = 1; column < nbColumns; column += 1) {
 
                 if (matrix[row][0] == 0 || matrix[0][column] == 0) {
 
@@ -50,7 +50,7 @@ public class SetMatrixZeroes {
 
         if (firstRow) {
 
-            for (int column = 0; column < nbColumns; column++) {
+            for (int column = 0; column < nbColumns; column += 1) {
 
                 // Set the entire first Row as Zeroes, if required so
                 matrix[0][column] = 0;
@@ -59,7 +59,7 @@ public class SetMatrixZeroes {
 
         if (firstColumn) {
 
-            for (int row = 0; row < nbRows; row++) {
+            for (int row = 0; row < nbRows; row += 1) {
 
                 // Set the entire first Column as Zeroes, if required so
                 matrix[row][0] = 0;

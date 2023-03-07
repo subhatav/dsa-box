@@ -18,7 +18,7 @@ public class LargestRectangle {
 
         lefts[0] = -1;
 
-        for (int index = 1; index < distance; index++) {
+        for (int index = 1; index < distance; index += 1) {
 
             int last = index - 1, height = heights[index];
 
@@ -30,7 +30,7 @@ public class LargestRectangle {
 
         rights[distance - 1] = distance;
 
-        for (int index = distance - 2; index >= 0; index--) {
+        for (int index = distance - 2; index >= 0; index -= 1) {
 
             int last = index + 1, height = heights[index];
 
@@ -40,7 +40,7 @@ public class LargestRectangle {
             rights[index] = last;
         }
 
-        for (int index = 0; index < heights.length; index++) {
+        for (int index = 0; index < heights.length; index += 1) {
 
             int height = heights[index], width = rights[index] - lefts[index] - 1;
 
