@@ -13,8 +13,8 @@ public class MergeIntervals {
 
     public int[][] compute(int[][] intervals) {
 
-        // Sort all the Intervals in Ascending Order w.r.t. their Start Positions
-        Arrays.parallelSort(intervals, Comparator.comparingInt(interval -> interval[0]));
+        // Sort all the Intervals in Ascending Order w.r.t. the Start Positions
+        Arrays.sort(intervals, Comparator.comparingInt(interval -> interval[0]));
 
         List<int[]> results = new ArrayList<>();
 

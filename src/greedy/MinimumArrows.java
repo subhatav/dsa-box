@@ -16,7 +16,7 @@ public class MinimumArrows {
 
         int arrows = 1, previous = 0, size = points.length;
 
-        for (int current = 1; current < size; current++) {
+        for (int current = 1; current < size; current += 1) {
 
             // Verify if the current Balloon is NOT
             // overlapping with the current Balloon

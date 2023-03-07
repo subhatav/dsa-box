@@ -27,6 +27,7 @@ public class MaxCircularSum {
 
         // If all Numbers are NEGATIVE
         if (maxSum <= 0) return maxSum;
+
         return Math.max(maxSum, totalSum - minSum);
     }
 }
