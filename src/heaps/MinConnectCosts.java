@@ -3,7 +3,7 @@ package heaps;
 import java.util.PriorityQueue;
 import java.util.Queue;
 
-// Problem Link: https://www.codingninjas.com/codestudio/problems/connect-n-ropes-with-minimum-cost_630476
+// Problem Link: https://www.codingninjas.com/codestudio/problems/630476
 // Solution Link: https://www.codingninjas.com/codestudio/library/connect-n-ropes-with-minimum-cost
 
 // Approach: Optimized Priority Queue; Time Complexity: O(NlogN), Space Complexity: O(N)
